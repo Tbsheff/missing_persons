@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<!--Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Human Trafficking Awareness</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+    
+    <!--Main header-->
+    <header>
+        <p>Human Trafficking Awareness</p>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div>Copyright ©最棒的团队 BTSHCM 2023</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</body>
+</html>
