@@ -1,895 +1,867 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Charts</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'img/world.png' %}" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
-</head>
-<body>
-    <div
-        class="block block-ve-chart-embed block-block-content block-block-content00a50780-1034-404d-a8ae-c8458c1f2b0e block-ve_chart-">
-        <h2 class="pane-title">Age of Victims</h2>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div
+    class="block block-ve-chart-embed block-block-content block-block-content00a50780-1034-404d-a8ae-c8458c1f2b0e block-ve_chart-">
+    <h2 class="pane-title">Age of Victims</h2>
 
 
-        <div class="chart">
-            <div class="chart-source" style="display:none;">
-                {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/68/download"},"model":{"backend":"csv","url":"/node/68/download"},"fields":[{"name":"Age
-                range","value":"Age
-                range","selected":false},{"name":"Percent","value":"Percent","selected":true}],"xfields":[{"name":"Age
-                range","value":"Age
-                range","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Age
-                range","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":true},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":false},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"discreteBarChart","width":640,"height":480,"group":true,"computeXLabels":false,"options":{"tooltips":true,"margin":{"top":0,"right":10,"bottom":30,"left":30},"xAxis":{"rotateLabels":-45,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"reduceXTicks":false,"showValues":true,"staggerLabels":false,"color":["#5CB8B2","#85CAC5","#AEDCD9","#CEEAE8","#E7F4F3","#FFD1BC","#FFB38F","#FF8D57","#FF671F"]},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Age
-                range","value":"Age
-                range","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"PercentageA","format":".0f"},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","20"],"yValuesFrom":"0","yValuesTo":"20","yValuesStep":2,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":"312","yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"Auto"}
-            </div>
-            <div class="chart-container">
-                <div class="recline-graph recline-nvd3 row">
-                    <div class="col-md-12 nvd3chart_4522858192246424 recline-nvd3" style="display: block;">
-                        <div id="nvd3chart_4522858192246424" class="recline-nvd3"><svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" style="height:312px;width: 100%;" class="nvd3-svg">
-                                <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
-                                    <g transform="translate(30,30)">
-                                        <defs>
-                                            <clippath id="nv-x-label-clip-1581">
-                                                <rect width="62.604395604395606" height="16" x="-31.302197802197803">
-                                                </rect>
-                                            </clippath>
-                                        </defs>
-                                        <g class="nv-x nv-axis nvd3-svg" transform="translate(0,252)">
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(38.258243560791016,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">0-8 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(107.81867980957031,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">9--17 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(177.37911987304688,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">18--20 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(246.93955993652344,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">21--23 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(316.5,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">24--26 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(386.0604248046875,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">27--29 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(455.6208801269531,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">30--38 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(525.1813354492188,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">39--47 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(594.7417602539062,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.571428775787354)"
-                                                            style="text-anchor: end;" x="0">48+ years</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,0V0H633V0"></path><text
-                                                        class="nv-axislabel" text-anchor="middle" y="77.63505602358012"
-                                                        x="316.5"></text>
+    <div class="chart">
+        <div class="chart-source" style="display:none;">
+            {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/68/download"},"model":{"backend":"csv","url":"/node/68/download"},"fields":[{"name":"Age
+            range","value":"Age
+            range","selected":false},{"name":"Percent","value":"Percent","selected":true}],"xfields":[{"name":"Age
+            range","value":"Age
+            range","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Age
+            range","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":true},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":false},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"discreteBarChart","width":640,"height":480,"group":true,"computeXLabels":false,"options":{"tooltips":true,"margin":{"top":0,"right":10,"bottom":30,"left":30},"xAxis":{"rotateLabels":-45,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"reduceXTicks":false,"showValues":true,"staggerLabels":false,"color":["#5CB8B2","#85CAC5","#AEDCD9","#CEEAE8","#E7F4F3","#FFD1BC","#FFB38F","#FF8D57","#FF671F"]},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Age
+            range","value":"Age
+            range","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"PercentageA","format":".0f"},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","20"],"yValuesFrom":"0","yValuesTo":"20","yValuesStep":2,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":"312","yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"Auto"}
+        </div>
+        <div class="chart-container">
+            <div class="recline-graph recline-nvd3 row">
+                <div class="col-md-12 nvd3chart_4522858192246424 recline-nvd3" style="display: block;">
+                    <div id="nvd3chart_4522858192246424" class="recline-nvd3"><svg version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" style="height:312px;width: 100%;" class="nvd3-svg">
+                            <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
+                                <g transform="translate(30,30)">
+                                    <defs>
+                                        <clippath id="nv-x-label-clip-1581">
+                                            <rect width="62.604395604395606" height="16" x="-31.302197802197803">
+                                            </rect>
+                                        </clippath>
+                                    </defs>
+                                    <g class="nv-x nv-axis nvd3-svg" transform="translate(0,252)">
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(38.258243560791016,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">0-8 years</text>
                                                 </g>
+                                                <g class="tick zero" transform="translate(107.81867980957031,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">9--17 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(177.37911987304688,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">18--20 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(246.93955993652344,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">21--23 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(316.5,0)" style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">24--26 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(386.0604248046875,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">27--29 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(455.6208801269531,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">30--38 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(525.1813354492188,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">39--47 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(594.7417602539062,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-252" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="rotate(-45 0,9.571428775787354)"
+                                                        style="text-anchor: end;" x="0">48+ years</text>
+                                                </g>
+                                                <path class="domain" d="M0,0V0H633V0"></path><text class="nv-axislabel"
+                                                    text-anchor="middle" y="77.63505602358012" x="316.5"></text>
                                             </g>
                                         </g>
-                                        <g class="nv-y nv-axis nvd3-svg">
-                                            <g class="nv-zeroLine">
-                                                <line x1="0" x2="633" y1="252" y2="252"></line>
-                                            </g>
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(0,252)"
-                                                        style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                            style="text-anchor: end;" y="0">0%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,228)" style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">2%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,204.00000000000003)"
-                                                        style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">4%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,179.99999999999997)"
-                                                        style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">6%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,156)" style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">8%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,132)" style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">10%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,108.00000000000001)"
-                                                        style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">12%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,84)" style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">14%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,59.99999999999999)"
-                                                        style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">16%</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,36)" style="opacity: 1;">
-                                                        <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">18%</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,12H0V252H0"></path><text
-                                                        class="nv-axislabel" transform="rotate(-90)" y="-50" x="-126"
-                                                        style="text-anchor: middle;"></text>
-                                                </g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                    transform="translate(0,252)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">0%</text></g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                    transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">20%</text></g>
-                                            </g>
+                                    </g>
+                                    <g class="nv-y nv-axis nvd3-svg">
+                                        <g class="nv-zeroLine">
+                                            <line x1="0" x2="633" y1="252" y2="252"></line>
                                         </g>
-                                        <g class="nv-barsWrap nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
-                                                <g>
-                                                    <g class="nv-groups">
-                                                        <g class="nv-group nv-series-0"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75;">
-                                                            <g transform="translate(10.086263656616211,204)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(92, 184, 178); stroke: rgb(92, 184, 178);">
-                                                                <rect height="47.99999999999997"
-                                                                    width="56.34395604395605" class="discreteBar">
-                                                                </rect><text text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">4.00</text>
-                                                            </g>
-                                                            <g transform="translate(79.6467056274414,24)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                                <rect height="228" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">19.00</text>
-                                                            </g>
-                                                            <g transform="translate(149.20713806152344,108)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(174, 220, 217); stroke: rgb(174, 220, 217);">
-                                                                <rect height="144" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">12.00</text>
-                                                            </g>
-                                                            <g transform="translate(218.767578125,108)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                                <rect height="144" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">12.00</text>
-                                                            </g>
-                                                            <g transform="translate(288.3280334472656,120)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(231, 244, 243); stroke: rgb(231, 244, 243);">
-                                                                <rect height="132" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">11.00</text>
-                                                            </g>
-                                                            <g transform="translate(357.8884582519531,144)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                                <rect height="107.99999999999997"
-                                                                    width="56.34395604395605" class="discreteBar">
-                                                                </rect><text text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">9.00</text>
-                                                            </g>
-                                                            <g transform="translate(427.44891357421875,36)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 179, 143); stroke: rgb(255, 179, 143);">
-                                                                <rect height="216" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">18.00</text>
-                                                            </g>
-                                                            <g transform="translate(497.00933837890625,156)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                                <rect height="96" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">8.00</text>
-                                                            </g>
-                                                            <g transform="translate(566.5697631835938,192)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 103, 31); stroke: rgb(255, 103, 31);">
-                                                                <rect height="60" width="56.34395604395605"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="28.171978021978024">5.00</text>
-                                                            </g>
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(0,252)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="0"
+                                                        style="text-anchor: end;" y="0">0%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,228)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">2%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,204.00000000000003)"
+                                                    style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">4%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,179.99999999999997)"
+                                                    style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">6%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,156)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">8%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,132)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">10%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,108.00000000000001)"
+                                                    style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">12%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,84)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">14%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,59.99999999999999)"
+                                                    style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">16%</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,36)" style="opacity: 1;">
+                                                    <line x2="633" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">18%</text>
+                                                </g>
+                                                <path class="domain" d="M0,12H0V252H0"></path><text class="nv-axislabel"
+                                                    transform="rotate(-90)" y="-50" x="-126"
+                                                    style="text-anchor: middle;"></text>
+                                            </g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
+                                                transform="translate(0,252)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">0%</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
+                                                transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">20%</text></g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-barsWrap nvd3-svg">
+                                        <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
+                                            <g>
+                                                <g class="nv-groups">
+                                                    <g class="nv-group nv-series-0"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75;">
+                                                        <g transform="translate(10.086263656616211,204)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(92, 184, 178); stroke: rgb(92, 184, 178);">
+                                                            <rect height="47.99999999999997" width="56.34395604395605"
+                                                                class="discreteBar">
+                                                            </rect><text text-anchor="middle" y="-4"
+                                                                x="28.171978021978024">4.00</text>
                                                         </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                            <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                <g transform="translate(559.6428565979004,5)">
-                                                    <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Percent</text>
+                                                        <g transform="translate(79.6467056274414,24)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                            <rect height="228" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">19.00</text>
+                                                        </g>
+                                                        <g transform="translate(149.20713806152344,108)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(174, 220, 217); stroke: rgb(174, 220, 217);">
+                                                            <rect height="144" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">12.00</text>
+                                                        </g>
+                                                        <g transform="translate(218.767578125,108)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                            <rect height="144" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">12.00</text>
+                                                        </g>
+                                                        <g transform="translate(288.3280334472656,120)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(231, 244, 243); stroke: rgb(231, 244, 243);">
+                                                            <rect height="132" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">11.00</text>
+                                                        </g>
+                                                        <g transform="translate(357.8884582519531,144)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                            <rect height="107.99999999999997" width="56.34395604395605"
+                                                                class="discreteBar">
+                                                            </rect><text text-anchor="middle" y="-4"
+                                                                x="28.171978021978024">9.00</text>
+                                                        </g>
+                                                        <g transform="translate(427.44891357421875,36)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 179, 143); stroke: rgb(255, 179, 143);">
+                                                            <rect height="216" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">18.00</text>
+                                                        </g>
+                                                        <g transform="translate(497.00933837890625,156)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                            <rect height="96" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">8.00</text>
+                                                        </g>
+                                                        <g transform="translate(566.5697631835938,192)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 103, 31); stroke: rgb(255, 103, 31);">
+                                                            <rect height="60" width="56.34395604395605"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="28.171978021978024">5.00</text>
+                                                        </g>
                                                     </g>
                                                 </g>
                                             </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div
-        class="block block-ve-chart-embed block-block-content block-block-contente98c41c4-f020-4d7d-a273-ab3a8fe15a59 block-ve_chart-">
-        <h2 class="pane-title">CHILDREN'S AGE AT ENTRY INTO TRAFFICKING</h2>
-
-
-        <div class="chart">
-            <div class="chart-source" style="display:none;">
-                {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/sites/g/files/tmzbdl2011/files/Chart%2030.csv"},"model":{"backend":"csv","url":"/sites/g/files/tmzbdl2011/files/Chart%2030.csv"},"fields":[{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"xfields":[{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Age","xDataType":"Auto","graphTypes":[{"name":"discreteBarChart","value":"discreteBarChart","selected":true},{"name":"multiBarChart","value":"multiBarChart","selected":false},{"name":"multiBarHorizontalChart","value":"multiBarHorizontalChart","selected":false},{"name":"stackedAreaChart","value":"stackedAreaChart","selected":false},{"name":"pieChart","value":"pieChart","selected":false},{"name":"lineChart","value":"lineChart","selected":false},{"name":"lineWithFocusChart","value":"lineWithFocusChart","selected":false},{"name":"scatterChart","value":"scatterChart","selected":false},{"name":"linePlusBarChart","value":"linePlusBarChart","selected":false}],"graphType":"discreteBarChart","width":640,"height":480,"group":false,"computeXLabels":false,"options":{"tooltips":true,"margin":{"top":5,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"reduceXTicks":false,"showValues":true,"staggerLabels":true,"color":["#85CAC5","#CEEAE8","#FFD1BC","#FF8D57"]},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","50"],"yValuesFrom":"0","yValuesTo":"50","yValuesStep":5,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":""}
-            </div>
-            <div class="chart-container">
-                <div class="recline-graph recline-nvd3 row">
-                    <div class="col-md-12 nvd3chart_9743809867325716 recline-nvd3" style="display: block;">
-                        <div id="nvd3chart_9743809867325716" class="recline-nvd3"><svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
-                                <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
-                                    <g transform="translate(60,30)">
-                                        <defs>
-                                            <clippath id="nv-x-label-clip-8495">
-                                                <rect width="264.7317073170732" height="16" x="-132.3658536585366">
-                                                </rect>
-                                            </clippath>
-                                        </defs>
-                                        <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(80.89024353027344,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="translate(0,5)" style="text-anchor: middle;"
-                                                            x="0">0-8 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(227.96340942382812,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="translate(0,17)" style="text-anchor: middle;"
-                                                            x="0">9-11 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(375.0365905761719,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="translate(0,5)" style="text-anchor: middle;"
-                                                            x="0">12-14 years</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(522.1097412109375,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="translate(0,17)" style="text-anchor: middle;"
-                                                            x="0">15-17 years</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,0V0H603V0"></path><text
-                                                        class="nv-axislabel" text-anchor="middle" y="36" x="301.5"
-                                                        transform="translate(0,17)"></text>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-y nv-axis nvd3-svg">
-                                            <g class="nv-zeroLine">
-                                                <line x1="0" x2="603" y1="400" y2="400"></line>
-                                            </g>
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(0,400)"
-                                                        style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                            style="text-anchor: end;" y="0">0</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,361.2)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">5</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,322.4)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">10</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,283.6)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">15</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,244.8)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">20</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,206)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">25</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,167.2)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">30</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,128.4)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">35</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,89.6)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">40</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,50.8)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">45</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,12H0V400H0"></path><text
-                                                        class="nv-axislabel" transform="rotate(-90)" y="-50" x="-200"
-                                                        style="text-anchor: middle;"></text>
-                                                </g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                    transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">0</text></g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                    transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">50</text></g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-barsWrap nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
-                                                <g>
-                                                    <g class="nv-groups">
-                                                        <g class="nv-group nv-series-0"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75;">
-                                                            <g transform="translate(21.32560920715332,198.24000549316406)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                                <rect height="201.76" width="119.12926829268294"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="59.56463414634147">26.00</text>
-                                                            </g>
-                                                            <g transform="translate(168.39877319335938,260.32000732421875)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                                <rect height="139.68" width="119.12926829268294"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="59.56463414634147">18.00</text>
-                                                            </g>
-                                                            <g transform="translate(315.4719543457031,221.52000427246094)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                                <rect height="178.48" width="119.12926829268294"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
-                                                                    x="59.56463414634147">23.00</text>
-                                                            </g>
-                                                            <g transform="translate(462.5451354980469,143.9199981689453)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                                <rect height="256.08000000000004"
-                                                                    width="119.12926829268294" class="discreteBar">
-                                                                </rect><text text-anchor="middle" y="-4"
-                                                                    x="59.56463414634147">33.00</text>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                            <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                <g transform="translate(529.6428565979004,5)">
-                                                    <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Percent</text>
-                                                    </g>
+                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
+                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
+                                            <g transform="translate(559.6428565979004,5)">
+                                                <g class="nv-series" transform="translate(0,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Percent</text>
                                                 </g>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
-                            </svg></div>
-                    </div>
+                            </g>
+                        </svg></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div
+    class="block block-ve-chart-embed block-block-content block-block-contente98c41c4-f020-4d7d-a273-ab3a8fe15a59 block-ve_chart-">
+    <h2 class="pane-title">CHILDREN'S AGE AT ENTRY INTO TRAFFICKING</h2>
 
-    <div
-        class="block block-ve-chart-embed block-block-content block-block-content519b038b-83df-4a16-b838-eb4a8e6cc5b5 block-ve_chart-">
-        <h2 class="pane-title">AGE OF IDENTIFIED GIRLS AND BOYS</h2>
 
-
-        <div class="chart">
-            <div class="chart-source" style="display:none;">
-                {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/340/download"},"model":{"backend":"csv","url":"/node/340/download"},"fields":[{"name":"Gender","value":"Gender","selected":false},{"name":"0-8
-                years","value":"0-8 years","selected":true},{"name":"9-11 years","value":"9-11
-                years","selected":true},{"name":"12-14 years","value":"12-14 years","selected":true},{"name":"15-17
-                years","value":"15-17
-                years","selected":true}],"xfields":[{"name":"Gender","value":"Gender","selected":true},{"name":"0-8
-                years","value":"0-8 years","selected":false},{"name":"9-11 years","value":"9-11
-                years","selected":false},{"name":"12-14 years","value":"12-14 years","selected":false},{"name":"15-17
-                years","value":"15-17
-                years","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["0-8
-                years","9-11 years","12-14 years","15-17
-                years"],"xfield":"Gender","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":true},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":false},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"multiBarChart","width":640,"height":480,"group":false,"computeXLabels":false,"options":{"reduceXTicks":true,"tooltips":true,"margin":{"top":0,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"color":["#85CAC5","#CEEAE8","#FFD1BC","#FF8D57"],"staggerLabels":false,"stacked":true},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Gender","value":"Gender","selected":false},{"name":"0-8
-                years","value":"0-8 years","selected":false},{"name":"9-11 years","value":"9-11
-                years","selected":false},{"name":"12-14 years","value":"12-14 years","selected":false},{"name":"15-17
-                years","value":"15-17
-                years","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","100"],"yValuesFrom":"0","yValuesTo":"100","yValuesStep":10,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":true,"label":true},"errors":{},"yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"Auto","chartHeight":""}
-            </div>
-            <div class="chart-container">
-                <div class="recline-graph recline-nvd3 row">
-                    <div class="col-md-12 nvd3chart_9415088824200918 recline-nvd3" style="display: block;">
-                        <div id="nvd3chart_9415088824200918" class="recline-nvd3"><svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
-                                <g class="nvd3 nv-wrap nv-multiBarWithLegend" transform="translate(60,30)">
-                                    <g>
-                                        <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(157.92857360839844,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0" style="opacity: 1;"></line><text
-                                                            dy=".71em" y="7" transform="translate(0,0)"
-                                                            style="text-anchor: middle; opacity: 1;" x="0">Girls</text>
-                                                    </g>
-                                                    <g class="tick zero" transform="translate(445.0714416503906,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-400" x2="0" style="opacity: 1;"></line><text
-                                                            dy=".71em" y="7" transform="translate(0,0)"
-                                                            style="text-anchor: middle; opacity: 1;" x="0">Boys</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,0V0H603V0"></path><text
-                                                        class="nv-axislabel" text-anchor="middle" y="36" x="301.5"
-                                                        style="opacity: 1;"></text>
+    <div class="chart">
+        <div class="chart-source" style="display:none;">
+            {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/sites/g/files/tmzbdl2011/files/Chart%2030.csv"},"model":{"backend":"csv","url":"/sites/g/files/tmzbdl2011/files/Chart%2030.csv"},"fields":[{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"xfields":[{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Age","xDataType":"Auto","graphTypes":[{"name":"discreteBarChart","value":"discreteBarChart","selected":true},{"name":"multiBarChart","value":"multiBarChart","selected":false},{"name":"multiBarHorizontalChart","value":"multiBarHorizontalChart","selected":false},{"name":"stackedAreaChart","value":"stackedAreaChart","selected":false},{"name":"pieChart","value":"pieChart","selected":false},{"name":"lineChart","value":"lineChart","selected":false},{"name":"lineWithFocusChart","value":"lineWithFocusChart","selected":false},{"name":"scatterChart","value":"scatterChart","selected":false},{"name":"linePlusBarChart","value":"linePlusBarChart","selected":false}],"graphType":"discreteBarChart","width":640,"height":480,"group":false,"computeXLabels":false,"options":{"tooltips":true,"margin":{"top":5,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"reduceXTicks":false,"showValues":true,"staggerLabels":true,"color":["#85CAC5","#CEEAE8","#FFD1BC","#FF8D57"]},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Age","value":"Age","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","50"],"yValuesFrom":"0","yValuesTo":"50","yValuesStep":5,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":""}
+        </div>
+        <div class="chart-container">
+            <div class="recline-graph recline-nvd3 row">
+                <div class="col-md-12 nvd3chart_9743809867325716 recline-nvd3" style="display: block;">
+                    <div id="nvd3chart_9743809867325716" class="recline-nvd3"><svg version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                            <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
+                                <g transform="translate(60,30)">
+                                    <defs>
+                                        <clippath id="nv-x-label-clip-8495">
+                                            <rect width="264.7317073170732" height="16" x="-132.3658536585366">
+                                            </rect>
+                                        </clippath>
+                                    </defs>
+                                    <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(80.89024353027344,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="translate(0,5)" style="text-anchor: middle;"
+                                                        x="0">0-8 years</text>
                                                 </g>
+                                                <g class="tick zero" transform="translate(227.96340942382812,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="translate(0,17)" style="text-anchor: middle;"
+                                                        x="0">9-11 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(375.0365905761719,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="translate(0,5)" style="text-anchor: middle;"
+                                                        x="0">12-14 years</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(522.1097412109375,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
+                                                        transform="translate(0,17)" style="text-anchor: middle;"
+                                                        x="0">15-17 years</text>
+                                                </g>
+                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel"
+                                                    text-anchor="middle" y="36" x="301.5"
+                                                    transform="translate(0,17)"></text>
                                             </g>
                                         </g>
-                                        <g class="nv-y nv-axis nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-axis">
-                                                <g>
-                                                    <g class="tick zero" transform="translate(0,400)"
-                                                        style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                            style="text-anchor: end;" y="0">0</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,360)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">10</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,320)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">20</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,280)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">30</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,240)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">40</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,200)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">50</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,160)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">60</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,120)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">70</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,80)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">80</text>
-                                                    </g>
-                                                    <g class="tick" transform="translate(0,40)" style="opacity: 1;">
-                                                        <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">90</text>
-                                                    </g>
-                                                    <path class="domain" d="M0,0H0V400H0"></path><text
-                                                        class="nv-axislabel" transform="rotate(-90)" y="-50" x="-200"
-                                                        style="text-anchor: middle;"></text>
-                                                </g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                    transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">0</text></g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                    transform="translate(0,0)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">100</text></g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-barsWrap nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-multibar" transform="translate(0,0)">
-                                                <defs>
-                                                    <clippath id="nv-edge-clip-9839">
-                                                        <rect width="603" height="400"></rect>
-                                                    </clippath>
-                                                </defs>
-                                                <g clip-path="url(#nv-edge-clip-9839)">
-                                                    <g class="nv-groups">
-                                                        <g class="nv-group nv-series-0"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                            <rect class="nv-bar positive" x="0" y="332" height="68"
-                                                                width="258.4285714285714"
-                                                                transform="translate(28.71428571428571,0)"
-                                                                style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                            </rect>
-                                                            <rect class="nv-bar positive" x="0" y="300" height="100"
-                                                                width="258.4285714285714"
-                                                                transform="translate(315.85714285714283,0)"
-                                                                style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                            </rect>
-                                                        </g>
-                                                        <g class="nv-group nv-series-1"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                            <rect class="nv-bar positive" x="0" y="292" height="40"
-                                                                width="258.4285714285714"
-                                                                transform="translate(28.71428571428571,0)"
-                                                                style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                            </rect>
-                                                            <rect class="nv-bar positive" x="0" y="236.00000000000003"
-                                                                height="63.99999999999997" width="258.4285714285714"
-                                                                transform="translate(315.85714285714283,0)"
-                                                                style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                            </rect>
-                                                        </g>
-                                                        <g class="nv-group nv-series-2"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                            <rect class="nv-bar positive" x="0" y="208" height="84"
-                                                                width="258.4285714285714"
-                                                                transform="translate(28.71428571428571,0)"
-                                                                style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                            </rect>
-                                                            <rect class="nv-bar positive" x="0" y="156"
-                                                                height="80.00000000000003" width="258.4285714285714"
-                                                                transform="translate(315.85714285714283,0)"
-                                                                style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                            </rect>
-                                                        </g>
-                                                        <g class="nv-group nv-series-3"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                            <rect class="nv-bar positive" x="0" y="4.0000000000000036"
-                                                                height="204" width="258.4285714285714"
-                                                                transform="translate(28.71428571428571,0)"
-                                                                style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                            </rect>
-                                                            <rect class="nv-bar positive" x="0" y="4.0000000000000036"
-                                                                height="152" width="258.4285714285714"
-                                                                transform="translate(315.85714285714283,0)"
-                                                                style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                            </rect>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-legendWrap nvd3-svg" transform="translate(180,-30)">
-                                            <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                <g transform="translate(62.41071319580078,5)">
-                                                    <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">0-8 years</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(82.02678680419922,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">9-11 years</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(169.83928680419922,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">12-14 years</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(265.2142868041992,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">15-17 years</text>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-controlsWrap nvd3-svg" transform="translate(0,-30)">
-                                            <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                <g transform="translate(25.928573608398438,5)">
-                                                    <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(68, 68, 68); fill-opacity: 0; stroke: rgb(68, 68, 68);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Grouped</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(78.70535659790039,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(68, 68, 68); fill-opacity: 1; stroke: rgb(68, 68, 68);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Stacked</text>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                        <g class="nv-interactive"></g>
                                     </g>
-                                </g>
-                            </svg></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div
-        class="block block-ve-chart-embed block-block-content block-block-content50bced35-9506-49b6-a128-27f2273fe380 block-ve_chart-">
-        <h2 class="pane-title">EDUCATION LEVEL OF CHILDREN</h2>
-
-
-        <div class="chart">
-            <div class="chart-source" style="display:none;">
-                {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/244/download"},"model":{"backend":"csv","url":"/node/244/download"},"fields":[{"name":"Education
-                Level","value":"Education
-                Level","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xfields":[{"name":"Education
-                Level","value":"Education
-                Level","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Education
-                Level","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":false},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":true},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"pieChart","width":640,"height":480,"group":false,"options":{"showLabels":true,"labelType":"percent","tooltips":true,"reduceXTicks":false,"margin":{"top":0,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":false,"showLegend":true,"donut":true,"color":["#5CB8B2","#85CAC5","#AEDCD9","#CEEAE8","#E7F4F3","#FFE8DD","#FFD1BC","#FFB38F","#FF8D57"]},"computeXLabels":true,"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Education
-                Level","value":"Education
-                Level","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":false,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["",""],"yValuesFrom":"","yValuesTo":"","yValuesStep":1,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":"","yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"String"}
-            </div>
-            <div class="chart-container">
-                <div class="recline-graph recline-nvd3 row">
-                    <div class="col-md-12 nvd3chart_5106621430931986 recline-nvd3" style="display: block;">
-                        <div id="nvd3chart_5106621430931986" class="recline-nvd3"><svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
-                                <g class="nvd3 nv-wrap nv-pieChart" transform="translate(60,70)">
-                                    <g>
-                                        <g class="nv-pieWrap nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pie nv-chart-916" transform="translate(0,0)">
-                                                <g>
-                                                    <g class="nv-pie" transform="translate(301.5,180)">
-                                                        <g class="nv-slice" fill="#5CB8B2" stroke="#5CB8B2">
-                                                            <path
-                                                                d="M8.817456953860943e-15,-144A144,144 0 0,1 8.817456953860943e-15,-144L5.5109105961630896e-15,-90A90,90 0 0,0 5.5109105961630896e-15,-90Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#85CAC5" stroke="#85CAC5">
-                                                            <path
-                                                                d="M8.817456953860943e-15,-144A144,144 0 0,1 143.43966159772162,-12.691078785158652L89.64978849857602,-7.931924240724158A90,90 0 0,0 5.5109105961630896e-15,-90Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#AEDCD9" stroke="#AEDCD9">
-                                                            <path
-                                                                d="M143.43966159772162,-12.691078785158652A144,144 0 0,1 143.97757249492778,-2.541381212610524L89.98598280932987,-1.5883632578815778A90,90 0 0,0 89.64978849857602,-7.931924240724158Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#CEEAE8" stroke="#CEEAE8">
-                                                            <path
-                                                                d="M143.97757249492778,-2.541381212610524A144,144 0 0,1 111.21266765151199,91.47536583055755L69.507917282195,57.17210364409847A90,90 0 0,0 89.98598280932987,-1.5883632578815778Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#E7F4F3" stroke="#E7F4F3">
-                                                            <path
-                                                                d="M111.21266765151199,91.47536583055755A144,144 0 0,1 63.7845297393612,129.10280309090328L39.86533108710075,80.68925193181455A90,90 0 0,0 69.507917282195,57.17210364409847Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#FFE8DD" stroke="#FFE8DD">
-                                                            <path
-                                                                d="M63.7845297393612,129.10280309090328A144,144 0 1,1 -49.78124072875545,-135.121530747345L-31.113275455472156,-84.45095671709062A90,90 0 1,0 39.86533108710075,80.68925193181455Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#FFD1BC" stroke="#FFD1BC">
-                                                            <path
-                                                                d="M-49.78124072875545,-135.121530747345A144,144 0 0,1 -40.125904787014996,-138.29646331350418L-25.078690491884373,-86.43528957094011A90,90 0 0,0 -31.113275455472156,-84.45095671709062Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#FFB38F" stroke="#FFB38F">
-                                                            <path
-                                                                d="M-40.125904787014996,-138.29646331350418A144,144 0 0,1 -40.125904787014996,-138.29646331350418L-25.078690491884373,-86.43528957094011A90,90 0 0,0 -25.078690491884373,-86.43528957094011Z">
-                                                            </path>
-                                                        </g>
-                                                        <g class="nv-slice" fill="#FF8D57" stroke="#FF8D57">
-                                                            <path
-                                                                d="M-40.125904787014996,-138.29646331350418A144,144 0 0,1 -1.5435006329840085e-13,-144L-9.646878956150053e-14,-90A90,90 0 0,0 -25.078690491884373,-86.43528957094011Z">
-                                                            </path>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-pieLabels" transform="translate(301.5,180)">
-                                                        <g class="nv-label"
-                                                            transform="translate(7.164183775012016e-15,-117)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(79.00175416718878,-86.3001902576528)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);">24%</text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(116.83603292420807,-6.192044132059098)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(110.48297755359802,38.503398173293164)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);">11%</text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(72.71743719858455,91.65792015570675)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);">7%</text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(-107.49177760850753,46.200841405359256)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);">52%</text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(-36.54754471061403,-111.1452966869299)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(-32.60229763944968,-112.36587644222215)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
-                                                        </g>
-                                                        <g class="nv-label"
-                                                            transform="translate(-16.465000095050257,-115.83567573019116)">
-                                                            <rect rx="3" ry="3"
-                                                                style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                            </rect><text
-                                                                style="text-anchor: middle; fill: rgb(0, 0, 0);">4%</text>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
+                                    <g class="nv-y nv-axis nvd3-svg">
+                                        <g class="nv-zeroLine">
+                                            <line x1="0" x2="603" y1="400" y2="400"></line>
                                         </g>
-                                        <g class="nv-legendWrap nvd3-svg" transform="translate(0,-70)">
-                                            <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                <g transform="translate(59.43749237060547,5)">
-                                                    <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">High school</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(124.72321319580078,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Middle school</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(279.42857360839844,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(174, 220, 217); fill-opacity: 1; stroke: rgb(174, 220, 217);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">N/K</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(416.1696472167969,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">None</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(0,25)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(231, 244, 243); fill-opacity: 1; stroke: rgb(231, 244, 243);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Other</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(124.72321319580078,25)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 232, 221); fill-opacity: 1; stroke: rgb(255, 232, 221);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Primary or Elementar...</text>
-                                                        <title>Primary or Elementary school</title>
-                                                        <title>Primary or Elementary school</title>
-                                                        <title>Primary or Elementary school</title>
-                                                        <title>Primary or Elementary school</title>
-                                                        <title>Primary or Elementary school</title>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(279.42857360839844,25)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Religious education</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(416.1696472167969,25)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 179, 143); fill-opacity: 1; stroke: rgb(255, 179, 143);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Secondary school</text>
-                                                    </g>
-                                                    <g class="nv-series" transform="translate(0,45)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Technical training</text>
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(0,400)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
+                                                        style="text-anchor: end;" y="0">0</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,361.2)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">5</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,322.4)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">10</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,283.6)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">15</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,244.8)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">20</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,206)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">25</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,167.2)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">30</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,128.4)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">35</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,89.6)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">40</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,50.8)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">45</text>
+                                                </g>
+                                                <path class="domain" d="M0,12H0V400H0"></path><text class="nv-axislabel"
+                                                    transform="rotate(-90)" y="-50" x="-200"
+                                                    style="text-anchor: middle;"></text>
+                                            </g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
+                                                transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">0</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
+                                                transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">50</text></g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-barsWrap nvd3-svg">
+                                        <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
+                                            <g>
+                                                <g class="nv-groups">
+                                                    <g class="nv-group nv-series-0"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75;">
+                                                        <g transform="translate(21.32560920715332,198.24000549316406)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                            <rect height="201.76" width="119.12926829268294"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="59.56463414634147">26.00</text>
+                                                        </g>
+                                                        <g transform="translate(168.39877319335938,260.32000732421875)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                            <rect height="139.68" width="119.12926829268294"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="59.56463414634147">18.00</text>
+                                                        </g>
+                                                        <g transform="translate(315.4719543457031,221.52000427246094)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                            <rect height="178.48" width="119.12926829268294"
+                                                                class="discreteBar"></rect><text text-anchor="middle"
+                                                                y="-4" x="59.56463414634147">23.00</text>
+                                                        </g>
+                                                        <g transform="translate(462.5451354980469,143.9199981689453)"
+                                                            class="nv-bar positive"
+                                                            style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                            <rect height="256.08000000000004" width="119.12926829268294"
+                                                                class="discreteBar">
+                                                            </rect><text text-anchor="middle" y="-4"
+                                                                x="59.56463414634147">33.00</text>
+                                                        </g>
                                                     </g>
                                                 </g>
                                             </g>
                                         </g>
                                     </g>
+                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
+                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
+                                            <g transform="translate(529.6428565979004,5)">
+                                                <g class="nv-series" transform="translate(0,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Percent</text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
                                 </g>
-                            </svg></div>
-                    </div>
+                            </g>
+                        </svg></div>
                 </div>
             </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+
+<div
+    class="block block-ve-chart-embed block-block-content block-block-content519b038b-83df-4a16-b838-eb4a8e6cc5b5 block-ve_chart-">
+    <h2 class="pane-title">AGE OF IDENTIFIED GIRLS AND BOYS</h2>
+
+
+    <div class="chart">
+        <div class="chart-source" style="display:none;">
+            {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/340/download"},"model":{"backend":"csv","url":"/node/340/download"},"fields":[{"name":"Gender","value":"Gender","selected":false},{"name":"0-8
+            years","value":"0-8 years","selected":true},{"name":"9-11 years","value":"9-11
+            years","selected":true},{"name":"12-14 years","value":"12-14 years","selected":true},{"name":"15-17
+            years","value":"15-17
+            years","selected":true}],"xfields":[{"name":"Gender","value":"Gender","selected":true},{"name":"0-8
+            years","value":"0-8 years","selected":false},{"name":"9-11 years","value":"9-11
+            years","selected":false},{"name":"12-14 years","value":"12-14 years","selected":false},{"name":"15-17
+            years","value":"15-17
+            years","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["0-8
+            years","9-11 years","12-14 years","15-17
+            years"],"xfield":"Gender","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":true},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":false},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"multiBarChart","width":640,"height":480,"group":false,"computeXLabels":false,"options":{"reduceXTicks":true,"tooltips":true,"margin":{"top":0,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":true,"showLegend":true,"color":["#85CAC5","#CEEAE8","#FFD1BC","#FF8D57"],"staggerLabels":false,"stacked":true},"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Gender","value":"Gender","selected":false},{"name":"0-8
+            years","value":"0-8 years","selected":false},{"name":"9-11 years","value":"9-11
+            years","selected":false},{"name":"12-14 years","value":"12-14 years","selected":false},{"name":"15-17
+            years","value":"15-17
+            years","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":true,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["0","100"],"yValuesFrom":"0","yValuesTo":"100","yValuesStep":10,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":true,"label":true},"errors":{},"yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"Auto","chartHeight":""}
+        </div>
+        <div class="chart-container">
+            <div class="recline-graph recline-nvd3 row">
+                <div class="col-md-12 nvd3chart_9415088824200918 recline-nvd3" style="display: block;">
+                    <div id="nvd3chart_9415088824200918" class="recline-nvd3"><svg version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                            <g class="nvd3 nv-wrap nv-multiBarWithLegend" transform="translate(60,30)">
+                                <g>
+                                    <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(157.92857360839844,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em"
+                                                        y="7" transform="translate(0,0)"
+                                                        style="text-anchor: middle; opacity: 1;" x="0">Girls</text>
+                                                </g>
+                                                <g class="tick zero" transform="translate(445.0714416503906,0)"
+                                                    style="opacity: 1;">
+                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em"
+                                                        y="7" transform="translate(0,0)"
+                                                        style="text-anchor: middle; opacity: 1;" x="0">Boys</text>
+                                                </g>
+                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel"
+                                                    text-anchor="middle" y="36" x="301.5" style="opacity: 1;"></text>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-y nv-axis nvd3-svg">
+                                        <g class="nvd3 nv-wrap nv-axis">
+                                            <g>
+                                                <g class="tick zero" transform="translate(0,400)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
+                                                        style="text-anchor: end;" y="0">0</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,360)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">10</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,320)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">20</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,280)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">30</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,240)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">40</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,200)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">50</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,160)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">60</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,120)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">70</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,80)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">80</text>
+                                                </g>
+                                                <g class="tick" transform="translate(0,40)" style="opacity: 1;">
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
+                                                        style="text-anchor: end;" y="0">90</text>
+                                                </g>
+                                                <path class="domain" d="M0,0H0V400H0"></path><text class="nv-axislabel"
+                                                    transform="rotate(-90)" y="-50" x="-200"
+                                                    style="text-anchor: middle;"></text>
+                                            </g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
+                                                transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">0</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
+                                                transform="translate(0,0)"><text dy=".32em" y="0" x="-3"
+                                                    text-anchor="end" style="opacity: 1;">100</text></g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-barsWrap nvd3-svg">
+                                        <g class="nvd3 nv-wrap nv-multibar" transform="translate(0,0)">
+                                            <defs>
+                                                <clippath id="nv-edge-clip-9839">
+                                                    <rect width="603" height="400"></rect>
+                                                </clippath>
+                                            </defs>
+                                            <g clip-path="url(#nv-edge-clip-9839)">
+                                                <g class="nv-groups">
+                                                    <g class="nv-group nv-series-0"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                        <rect class="nv-bar positive" x="0" y="332" height="68"
+                                                            width="258.4285714285714"
+                                                            transform="translate(28.71428571428571,0)"
+                                                            style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                        </rect>
+                                                        <rect class="nv-bar positive" x="0" y="300" height="100"
+                                                            width="258.4285714285714"
+                                                            transform="translate(315.85714285714283,0)"
+                                                            style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                        </rect>
+                                                    </g>
+                                                    <g class="nv-group nv-series-1"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                        <rect class="nv-bar positive" x="0" y="292" height="40"
+                                                            width="258.4285714285714"
+                                                            transform="translate(28.71428571428571,0)"
+                                                            style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                        </rect>
+                                                        <rect class="nv-bar positive" x="0" y="236.00000000000003"
+                                                            height="63.99999999999997" width="258.4285714285714"
+                                                            transform="translate(315.85714285714283,0)"
+                                                            style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                        </rect>
+                                                    </g>
+                                                    <g class="nv-group nv-series-2"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                        <rect class="nv-bar positive" x="0" y="208" height="84"
+                                                            width="258.4285714285714"
+                                                            transform="translate(28.71428571428571,0)"
+                                                            style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                        </rect>
+                                                        <rect class="nv-bar positive" x="0" y="156"
+                                                            height="80.00000000000003" width="258.4285714285714"
+                                                            transform="translate(315.85714285714283,0)"
+                                                            style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                        </rect>
+                                                    </g>
+                                                    <g class="nv-group nv-series-3"
+                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036"
+                                                            height="204" width="258.4285714285714"
+                                                            transform="translate(28.71428571428571,0)"
+                                                            style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                        </rect>
+                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036"
+                                                            height="152" width="258.4285714285714"
+                                                            transform="translate(315.85714285714283,0)"
+                                                            style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                        </rect>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-legendWrap nvd3-svg" transform="translate(180,-30)">
+                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
+                                            <g transform="translate(62.41071319580078,5)">
+                                                <g class="nv-series" transform="translate(0,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">0-8 years</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(82.02678680419922,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">9-11 years</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(169.83928680419922,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">12-14 years</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(265.2142868041992,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">15-17 years</text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-controlsWrap nvd3-svg" transform="translate(0,-30)">
+                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
+                                            <g transform="translate(25.928573608398438,5)">
+                                                <g class="nv-series" transform="translate(0,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(68, 68, 68); fill-opacity: 0; stroke: rgb(68, 68, 68);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Grouped</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(78.70535659790039,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(68, 68, 68); fill-opacity: 1; stroke: rgb(68, 68, 68);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Stacked</text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-interactive"></g>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="block block-ve-chart-embed block-block-content block-block-content50bced35-9506-49b6-a128-27f2273fe380 block-ve_chart-">
+    <h2 class="pane-title">EDUCATION LEVEL OF CHILDREN</h2>
+
+
+    <div class="chart">
+        <div class="chart-source" style="display:none;">
+            {"queryState":{"size":100,"from":0,"q":"","facets":{},"filters":[]},"step":3,"source":{"backend":"csv","url":"/node/244/download"},"model":{"backend":"csv","url":"/node/244/download"},"fields":[{"name":"Education
+            Level","value":"Education
+            Level","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xfields":[{"name":"Education
+            Level","value":"Education
+            Level","selected":true},{"name":"Percent","value":"Percent","selected":false}],"xDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"seriesFields":["Percent"],"xfield":"Education
+            Level","xDataType":"Auto","graphTypes":[{"value":"discreteBarChart","selected":false},{"value":"multiBarChart","selected":false},{"value":"multiBarHorizontalChart","selected":false},{"value":"stackedAreaChart","selected":false},{"value":"pieChart","selected":true},{"value":"lineChart","selected":false},{"value":"lineWithFocusChart","selected":false},{"value":"scatterChart","selected":false},{"value":"linePlusBarChart","selected":false}],"graphType":"pieChart","width":640,"height":480,"group":false,"options":{"showLabels":true,"labelType":"percent","tooltips":true,"reduceXTicks":false,"margin":{"top":0,"right":10,"bottom":50,"left":60},"xAxis":{"rotateLabels":0,"axisLabel":"","axisLabelDistance":0},"yAxis":{"axisLabel":"","axisLabelDistance":0},"y1Axis":{"axisLabelDistance":0},"y2Axis":{"axisLabelDistance":0},"showControls":false,"showLegend":true,"donut":true,"color":["#5CB8B2","#85CAC5","#AEDCD9","#CEEAE8","#E7F4F3","#FFE8DD","#FFD1BC","#FFB38F","#FF8D57"]},"computeXLabels":true,"sortFields":[{"name":"default","label":"Default","selected":false},{"name":"Education
+            Level","value":"Education
+            Level","selected":false},{"name":"Percent","value":"Percent","selected":false}],"transitionTime":"","xFormat":{"type":"String","format":""},"yFormat":{"type":"String","format":""},"y1Format":{"type":null},"y2Format":{"type":null},"sort":"","showTitle":false,"xValues":["",""],"xValuesFrom":"","xValuesTo":"","xValuesStep":1,"yValues":["",""],"yValuesFrom":"","yValuesTo":"","yValuesStep":1,"y1Values":[null,null],"y1ValuesStep":1,"y2Values":[null,null],"y2ValuesStep":1,"goal":{"value":"","color":"","outside":false,"label":false},"errors":{},"chartHeight":"","yDataTypes":[{"name":"Number","value":"Number","selected":false},{"name":"String","value":"String","selected":false},{"name":"Date","value":"Date","selected":false},{"name":"Auto","value":"Auto","selected":true}],"yDataType":"String"}
+        </div>
+        <div class="chart-container">
+            <div class="recline-graph recline-nvd3 row">
+                <div class="col-md-12 nvd3chart_5106621430931986 recline-nvd3" style="display: block;">
+                    <div id="nvd3chart_5106621430931986" class="recline-nvd3"><svg version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(60,70)">
+                                <g>
+                                    <g class="nv-pieWrap nvd3-svg">
+                                        <g class="nvd3 nv-wrap nv-pie nv-chart-916" transform="translate(0,0)">
+                                            <g>
+                                                <g class="nv-pie" transform="translate(301.5,180)">
+                                                    <g class="nv-slice" fill="#5CB8B2" stroke="#5CB8B2">
+                                                        <path
+                                                            d="M8.817456953860943e-15,-144A144,144 0 0,1 8.817456953860943e-15,-144L5.5109105961630896e-15,-90A90,90 0 0,0 5.5109105961630896e-15,-90Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#85CAC5" stroke="#85CAC5">
+                                                        <path
+                                                            d="M8.817456953860943e-15,-144A144,144 0 0,1 143.43966159772162,-12.691078785158652L89.64978849857602,-7.931924240724158A90,90 0 0,0 5.5109105961630896e-15,-90Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#AEDCD9" stroke="#AEDCD9">
+                                                        <path
+                                                            d="M143.43966159772162,-12.691078785158652A144,144 0 0,1 143.97757249492778,-2.541381212610524L89.98598280932987,-1.5883632578815778A90,90 0 0,0 89.64978849857602,-7.931924240724158Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#CEEAE8" stroke="#CEEAE8">
+                                                        <path
+                                                            d="M143.97757249492778,-2.541381212610524A144,144 0 0,1 111.21266765151199,91.47536583055755L69.507917282195,57.17210364409847A90,90 0 0,0 89.98598280932987,-1.5883632578815778Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#E7F4F3" stroke="#E7F4F3">
+                                                        <path
+                                                            d="M111.21266765151199,91.47536583055755A144,144 0 0,1 63.7845297393612,129.10280309090328L39.86533108710075,80.68925193181455A90,90 0 0,0 69.507917282195,57.17210364409847Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#FFE8DD" stroke="#FFE8DD">
+                                                        <path
+                                                            d="M63.7845297393612,129.10280309090328A144,144 0 1,1 -49.78124072875545,-135.121530747345L-31.113275455472156,-84.45095671709062A90,90 0 1,0 39.86533108710075,80.68925193181455Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#FFD1BC" stroke="#FFD1BC">
+                                                        <path
+                                                            d="M-49.78124072875545,-135.121530747345A144,144 0 0,1 -40.125904787014996,-138.29646331350418L-25.078690491884373,-86.43528957094011A90,90 0 0,0 -31.113275455472156,-84.45095671709062Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#FFB38F" stroke="#FFB38F">
+                                                        <path
+                                                            d="M-40.125904787014996,-138.29646331350418A144,144 0 0,1 -40.125904787014996,-138.29646331350418L-25.078690491884373,-86.43528957094011A90,90 0 0,0 -25.078690491884373,-86.43528957094011Z">
+                                                        </path>
+                                                    </g>
+                                                    <g class="nv-slice" fill="#FF8D57" stroke="#FF8D57">
+                                                        <path
+                                                            d="M-40.125904787014996,-138.29646331350418A144,144 0 0,1 -1.5435006329840085e-13,-144L-9.646878956150053e-14,-90A90,90 0 0,0 -25.078690491884373,-86.43528957094011Z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                                <g class="nv-pieLabels" transform="translate(301.5,180)">
+                                                    <g class="nv-label"
+                                                        transform="translate(7.164183775012016e-15,-117)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(79.00175416718878,-86.3001902576528)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">24%</text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(116.83603292420807,-6.192044132059098)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(110.48297755359802,38.503398173293164)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">11%</text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(72.71743719858455,91.65792015570675)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">7%</text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(-107.49177760850753,46.200841405359256)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">52%</text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(-36.54754471061403,-111.1452966869299)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(-32.60229763944968,-112.36587644222215)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    </g>
+                                                    <g class="nv-label"
+                                                        transform="translate(-16.465000095050257,-115.83567573019116)">
+                                                        <rect rx="3" ry="3"
+                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text
+                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">4%</text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-70)">
+                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
+                                            <g transform="translate(59.43749237060547,5)">
+                                                <g class="nv-series" transform="translate(0,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">High school</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(124.72321319580078,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Middle school</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(279.42857360839844,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(174, 220, 217); fill-opacity: 1; stroke: rgb(174, 220, 217);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">N/K</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(416.1696472167969,5)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">None</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(0,25)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(231, 244, 243); fill-opacity: 1; stroke: rgb(231, 244, 243);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Other</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(124.72321319580078,25)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 232, 221); fill-opacity: 1; stroke: rgb(255, 232, 221);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Primary or Elementar...</text>
+                                                    <title>Primary or Elementary school</title>
+                                                    <title>Primary or Elementary school</title>
+                                                    <title>Primary or Elementary school</title>
+                                                    <title>Primary or Elementary school</title>
+                                                    <title>Primary or Elementary school</title>
+                                                </g>
+                                                <g class="nv-series" transform="translate(279.42857360839844,25)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Religious education</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(416.1696472167969,25)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 179, 143); fill-opacity: 1; stroke: rgb(255, 179, 143);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Secondary school</text>
+                                                </g>
+                                                <g class="nv-series" transform="translate(0,45)">
+                                                    <circle class="nv-legend-symbol" r="5"
+                                                        style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
+                                                        dx="8" fill="#000">Technical training</text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
