@@ -7,3 +7,6 @@ def indexPageView(request):
 
 def chartPageView(request):
     return render(request,'trafficking/charts.html')
+
+def aboutPageView(request):
+    return render(request,'trafficking/about.html')

@@ -69,8 +69,9 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 75%;
-  gap: 5rem;
+  gap: 10rem;
 }
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -218,6 +219,8 @@ svg {
 
 table {
   border-collapse: collapse;
+  position: relative;
+  top: 7rem;
 }
 
 caption {
