@@ -69,7 +69,9 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 75%;
-  gap: 5rem;
+  gap: 1rem;
+  position: relative;
+  top: 5rem;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
