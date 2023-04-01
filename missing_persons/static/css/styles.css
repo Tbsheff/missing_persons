@@ -72,6 +72,7 @@ body {
   gap: 1rem;
   position: relative;
   top: 5rem;
+  padding-bottom: 10rem;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -630,6 +631,16 @@ pre code {
   margin-right: -0.75rem;
   margin-left: -0.75rem;
 }
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
 
 .no-gutters {
   margin-right: 0;

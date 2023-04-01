@@ -630,8 +630,17 @@ pre code {
   flex-wrap: wrap;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
-  color: #fff
 }
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+  color: #fff;
+  padding-top: .5rem;
+}
+
 
 .no-gutters {
   margin-right: 0;
