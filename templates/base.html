@@ -17,8 +17,8 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="{% url 'CTDC' %}navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="true" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
             </button>
@@ -36,16 +36,35 @@
 <body>
     {% block content %}
     {% endblock %}
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div>Copyright ©最棒的团队 2023</div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 </body>
+
+<footer class="footer py-4 navbar-expand-lg navbar-toggler fixed-bottom">
+    <div class="btn-group dropright">
+        <button type="button" class="btn btn-warning">
+            More Resources
+        </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropright</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{% url 'CTDC' %}">CTDC</a>
+            <a class="dropdown-item" href="{% url 'hth' %}">Human Trafficking Hotline</a>
+            <a class="dropdown-item" href="{% url 'toolkit' %}">Sharedhope Toolkit</a>
+            <a class="dropdown-item" href="{% url 'UTA' %}">UTA</a>
+            <a class="dropdown-item" href="{% url 'attorney' %}">Utah Attorney General</a>
+            <a class="dropdown-item" href="{% url 'report' %}">Utah Report</a>
+            <a class="dropdown-item" href="{% url 'stats' %}">Utah Statistics</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div>Copyright ©最棒的团队 2023</div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 </html>
