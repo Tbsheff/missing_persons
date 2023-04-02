@@ -71,7 +71,7 @@ body {
   max-width: 75%;
   gap: 1rem;
   position: relative;
-  top: 5rem;
+  top: 6.2rem;
   padding-bottom: 10rem;
 }
 
@@ -110,6 +110,11 @@ abbr[data-original-title] {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
+
+#yourImage {
+    height: 3.5rem;
+}
+
 
 address {
   margin-bottom: 1rem;
