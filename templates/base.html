@@ -16,7 +16,7 @@
 <!--Main header-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <img src="{% static 'images/logo.png' %}" alt="your image">
+        <img src="{% static 'images/logo.png' %}" alt="your image" id="yourImage">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="{% url 'CTDC' %}navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="true" aria-label="Toggle navigation">
@@ -41,11 +41,11 @@
 
 <footer class="footer py-4 navbar-expand-lg navbar-toggler fixed-bottom">
     <div class="btn-group dropup">
-        <button type="button" class="btn btn-warning">More Resources</button>
+        <button type="button" class="btn btn-warning" for="dropdown">More Resources</button>
         <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="{% url 'CTDC' %}">CTDC</a>
             <a class="dropdown-item" href="{% url 'hth' %}">Human Trafficking Hotline</a>
             <a class="dropdown-item" href="{% url 'toolkit' %}">Sharedhope Toolkit</a>
