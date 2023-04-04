@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+# Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson
+#This is a human trafficking awarenes website that includes three main html pages (not including the base html)
+# and one application called trafficking
+
 import os
 from pathlib import Path
 
