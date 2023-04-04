@@ -43,7 +43,7 @@
 
     <footer class="footer py-4 navbar-expand-lg navbar-toggler fixed-bottom">
         <div class="btn-group dropup">
-            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button id="dropup" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More Resources<span class="sr-only">Toggle Dropdown</span>
             </button>
             <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -56,19 +56,6 @@
                 <a class="dropdown-item" href="{% url 'stats' %}" target="_blank">Utah Statistics</a>
             </div>
         </div>
-        <script>
-            // function change() {
-            //     var dropdown = document.getElementById("dropdown")
-            //     document.getElementById("dropup").setAttribute("aria-expanded", "true")
-            //     dropdown.setAttribute("class", "dropdown-menu show")
-
-            // }
-
-            // function dropup() {
-            //     var dropdown = document.getElementById("dropup").click();
-            // }
-        </script>
-
 
         <div class="container">
             <div class="row1 align-items-center">
