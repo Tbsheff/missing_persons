@@ -2,49 +2,62 @@
 {% load static %}
 {% block content %}
 <div class="flex-container"></div>
-<h1>Meet the team!</h1>
+<h1 id="meet">Meet the team!</h1>
 
 <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/C5603AQGZ0X9Od19D3g/profile-displayphoto-shrink_800_800/0/1648338736336?e=1685577600&v=beta&t=5Yv7fmj_bMR8qChLkjgEp20T67pt-wUQ6ULsH60DQxI" alt="Generic placeholder image" width="140" height="140">
-        <h2>Brendan Bundy</h2>
-        <p>"Perfect love casteth off all fear"</p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/brendan-bundy/" role="button" target="__blank">Learn More »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/D5603AQEuBqSn7qF6kQ/profile-displayphoto-shrink_400_400/0/1666286630671?e=1685577600&v=beta&t=NNLWHJnJcj7nzXnapx6ocfidqcxucgRMjeK2ob0BEGM" alt="Generic placeholder image" width="140" height="140">
-        <h2>Camille Cameron</h2>
-        <p>Camille Cameron</p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/hannah-cameron-8b7416254/" role="button" target="__blank">Learn More »</a></p>
-    </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/C4E03AQH5YZgeTi2CDA/profile-displayphoto-shrink_400_400/0/1615300065265?e=1685577600&v=beta&t=NerNFBPg6msmBK6PVhupAGHryeiLPIY6B72fkIzmmvQ" alt="Generic placeholder image" width="140" height="140">
-        <h2>Tyler Sheffield</h2>
-        <p>Anger is like peeing your pants, everyone can see it, but only you can feel it.</p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/tylersheffield/" role="button" target="__blank">Learn More »</a></p>
-    </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/C4E03AQG_vG9cobGZCQ/profile-displayphoto-shrink_400_400/0/1643258228811?e=1685577600&v=beta&t=AqpenHtgnClicnvQtfRGixS5t8N4ljPbqNBnRVxZEfc" alt="Generic placeholder image" width="140" height="140">
-        <h2>Savannah Hogan</h2>
-        <p>Savannah is a finance major from Tooele, UT. She loves hiking, dogs, and Taylor Swift.
-        </p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/savannahhogan/" role="button" target="__blank">Learn More »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/D4E03AQHydblxXmR6rQ/profile-displayphoto-shrink_400_400/0/1665632943363?e=1685577600&v=beta&t=J0NmfUxj7D_PaUuhA0CQbVuJHUIJXKUTLBwhprwSAiE" alt="Generic placeholder image" width="140" height="140">
-        <h2>Martin Villar</h2>
-        <p>Martin is a pre-business major from Chile. He loves Taylor Swift.</p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/martin-alonso-villar-barrios/" role="button" target="__blank">Learn More »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.licdn.com/dms/image/C4D03AQGmZEgcqVdGXw/profile-displayphoto-shrink_400_400/0/1614376416327?e=1685577600&v=beta&t=_z4p4uXp1kL48ZyMQ6nlH3jcgYQ9z09iw_Mp9HqetQs" alt="Generic placeholder image" width="140" height="140">
-        <h2>Hannah Johnson</h2>
-        <p>Hannah is an amateur puddle jumper from a small town in Michigan.</p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/hannah-johnson-byu/" role="button" target="__blank">Learn More »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-  </div>
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+
+    <img class="rounded-circle row-1 col-1"
+      src="https://media.licdn.com/dms/image/C5603AQGZ0X9Od19D3g/profile-displayphoto-shrink_800_800/0/1648338736336?e=1685577600&v=beta&t=5Yv7fmj_bMR8qChLkjgEp20T67pt-wUQ6ULsH60DQxI"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name1 col-1">Brendan Bundy</h2>
+    <p class="p1 col-1">"Perfect love casteth out all fear" (Moro. 8:16)</p>
+    <p class="learnmore col-1"><a class="btn btn-secondary" href="https://www.linkedin.com/in/brendan-bundy/" role="button" target="__blank">Learn More »</a></p>
+    <!-- /.col-lg-4 -->
+
+    <img class="rounded-circle row-1 col-2"
+      src="https://media.licdn.com/dms/image/D5603AQEuBqSn7qF6kQ/profile-displayphoto-shrink_400_400/0/1666286630671?e=1685577600&v=beta&t=NNLWHJnJcj7nzXnapx6ocfidqcxucgRMjeK2ob0BEGM"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name1 col-2">Camille Cameron</h2>
+    <p class="p1 col-2">Camille Cameron</p>
+    <p class="learnmore col-2"><a class="btn btn-secondary" href="https://www.linkedin.com/in/hannah-cameron-8b7416254/" role="button" target="__blank">Learn More »</a></p>
+    <!-- /.col-lg-4 -->
+
+    <img class="rounded-circle row-1 col-3"
+      src="https://media.licdn.com/dms/image/C4E03AQH5YZgeTi2CDA/profile-displayphoto-shrink_400_400/0/1615300065265?e=1685577600&v=beta&t=NerNFBPg6msmBK6PVhupAGHryeiLPIY6B72fkIzmmvQ"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name1 col-3">Tyler Sheffield</h2>
+    <p class="p1 col-3">Anger is like peeing your pants, everyone can see it, but only you can feel it.</p>
+    <p class="learnmore col-3"><a class="btn btn-secondary" href="https://www.linkedin.com/in/tylersheffield/" role="button" target="__blank">Learn More »</a></p>
+    <!-- /.col-lg-4 -->
+
+    <img class="rounded-circle row-2 col-1"
+      src="https://media.licdn.com/dms/image/C4E03AQG_vG9cobGZCQ/profile-displayphoto-shrink_400_400/0/1643258228811?e=1685577600&v=beta&t=AqpenHtgnClicnvQtfRGixS5t8N4ljPbqNBnRVxZEfc"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name2 col-1">Savannah Hogan</h2>
+    <p class="p2 col-1">Savannah is a finance major from Tooele, UT. She loves hiking, dogs, and Taylor Swift.
+    </p>
+    <p class="learnmore2 col-1"><a class="btn btn-secondary" href="https://www.linkedin.com/in/savannahhogan/" role="button" target="__blank">Learn More »</a></p>
+    <!-- /.col-lg-4 -->
+
+    <img class="rounded-circle row-2 col-2"
+      src="https://media.licdn.com/dms/image/D4E03AQHydblxXmR6rQ/profile-displayphoto-shrink_400_400/0/1665632943363?e=1685577600&v=beta&t=J0NmfUxj7D_PaUuhA0CQbVuJHUIJXKUTLBwhprwSAiE"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name2 col-2">Martin Villar</h2>
+    <p class="p2 col-2">Martin is a pre-business major from Chile. He loves Taylor Swift.</p>
+    <p class="learnmore2 col-2"><a class="btn btn-secondary" href="https://www.linkedin.com/in/martin-alonso-villar-barrios/" role="button" target="__blank">Learn More »</a>
+    </p>
+    <!-- /.col-lg-4 -->
+
+    <img class="rounded-circle row-2 col-3"
+      src="https://media.licdn.com/dms/image/C4D03AQGmZEgcqVdGXw/profile-displayphoto-shrink_400_400/0/1614376416327?e=1685577600&v=beta&t=_z4p4uXp1kL48ZyMQ6nlH3jcgYQ9z09iw_Mp9HqetQs"
+      alt="Generic placeholder image" width="140" height="140">
+    <h2 class="name2 col-3">Hannah Johnson</h2>
+    <p class="p2 col-3">Hannah Johnson</p>
+    <p class="learnmore2 col-3"><a class="btn btn-secondary" href="https://www.linkedin.com/in/hannah-johnson-byu/" role="button" target="__blank">Learn More »</a></p>
+    <!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+</div>
 {% endblock %}
