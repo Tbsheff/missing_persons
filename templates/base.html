@@ -1,6 +1,9 @@
+<!--Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson-->
+<!-- This is the base template for the humman trafficking awarness website. It included a navigation window
+ and a footer with copyright and a drop down menu -->
+
 {% load static %}
 <!DOCTYPE html>
-<!--Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy-->
 <html lang="en">
 
 <head>
@@ -9,19 +12,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Human Trafficking Awareness</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %} ?{% now 'U' %}" rel="stylesheet" />
 </head>
 <!--Main header-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <img src="{% static 'images/logo.png' %}" alt="your image" id="yourImage">
+        <img src="{% static 'images/303logo.png' %}" alt="your image" id="yourImage">
         <div class="container conthead">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="{% url 'CTDC' %}navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="{% url 'CTDC' %}navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="true" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
             </button>
@@ -45,10 +46,8 @@
 
     <footer class="footer py-4 navbar-expand-lg navbar-toggler fixed-bottom">
         <div class="btn-group dropup">
-            <button type="button" class="btn btn-warning" for="dropdown">More Resources</button>
-            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
+            <button id="dropup" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Resources<span class="sr-only">Toggle Dropdown</span>
             </button>
             <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="{% url 'CTDC' %}" target="_blank">CTDC</a>
@@ -71,4 +70,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 </body>
+
 </html>
