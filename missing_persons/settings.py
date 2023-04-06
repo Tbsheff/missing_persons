@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+# Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson
+#This is a human trafficking awarenes website that includes three main html pages (not including the base html)
+# and one application called trafficking
+
 import os
 from pathlib import Path
 
@@ -25,7 +29,7 @@ SECRET_KEY = 'django-insecure-ja%)6tl+zd%d^1y765nya8o=wgrz%fua5=9hjt=7(la*tn2k$&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,4 +129,5 @@ STATICFILES_DIRS = [
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
