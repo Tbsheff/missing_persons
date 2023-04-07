@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime, timedelta
 
 
-class Customer(models.Model):
+class Missingperson(models.Model):
     date_missing = models.DateField(default=datetime.today, blank=True)
     last_name = models.CharField(max_length=30)
     first_name = models.CharField(max_length=30)
