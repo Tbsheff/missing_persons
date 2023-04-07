@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 # Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson
-#This is a human trafficking awarenes website that includes three main html pages (not including the base html)
+# This is a human trafficking awarenes website that includes three main html pages (not including the base html)
 # and one application called trafficking
 
 import os
@@ -80,8 +80,11 @@ WSGI_APPLICATION = 'missing_persons.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'missingpeople',
+        'USER': 'postgres',
+        'PASSWORD': 'Hello',
+        'HOST': 'localhost'
     }
 }
 
@@ -128,6 +131,3 @@ STATICFILES_DIRS = [
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
-
-
