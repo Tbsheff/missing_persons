@@ -30,7 +30,7 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'missingpeople',
         'USER': 'postgres',
-        'PASSWORD': '0035',
+        'PASSWORD': getpass(),
         'HOST': 'localhost',
         'PORT': '5432'
     }
