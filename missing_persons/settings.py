@@ -10,24 +10,27 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 # Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson
-#This is a human trafficking awarenes website that includes three main html pages (not including the base html)
+# This is a human trafficking awarenes website that includes three main html pages (not including the base html)
 # and one application called trafficking
 
 import os
 from pathlib import Path
+from getpass import getpass
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ja%)6tl+zd%d^1y765nya8o=wgrz%fua5=9hjt=7(la*tn2k$&'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -83,10 +86,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'missingpeople',
         'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': 'localhost'
+        'PASSWORD': '0035',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
-}  
+}
 
 
 # Password validation
@@ -131,6 +135,3 @@ STATICFILES_DIRS = [
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
-
-

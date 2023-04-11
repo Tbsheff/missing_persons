@@ -1,0 +1,16 @@
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('10/30/2009','Sharmarice','Halima',14,'Granger','UT','F','W');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('10/16/2015','Martinez','Kimberly',16,'West Valley City','UT','F','M');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('07/23/2004','Gomez','Brenda',3,'Logan','UT','F','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('05/25/2003','Bishop','Acacia',1,'Salt Lake City','UT','F','W');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('08/03/2020','Salazar','Maria',14,'Snowville','UT','F','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('04/09/2020','Hernandez-Soto','Peggy',6,'Ogden','UT','F','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('06/24/2021','Jimenez','Lucero',14,'West Valley City','UT','F','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('11/08/2013','Colindres-Avila','Yuris',17,'West Valley City','UT','F','M');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('07/15/2021','Harris','Kandis',16,'Salt Lake City','UT','F','W');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('07/30/2006','Seal','Jaydan',1,'Garleys Wash','UT','M','W');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('06/13/2018','Lizarraga','Jose',13,'West Valley City','UT','M','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('04/23/2020','Cortez Trujillo','Eztli',21,'North Ogden','UT','M','H');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('10/25/2017','Fowles','Juan',15,'Lehi','UT','M','M');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('08/20/2012','Garcia','Isai',17,'West Valley City','UT','M','M');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('09/01/2015','Smith','Macin',17,'St. George','UT','M','W');
+    INSERT INTO trafficking_missingperson(date_missing,last_name,first_name,age_at_missing,city,state,gender,race) VALUES ('01/26/2006','Sisco-Ramirez','Jose',4,'West Valley City','UT','M','M');

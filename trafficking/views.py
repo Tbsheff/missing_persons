@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def indexPageView(request):
+def chartPageView(request):
     lstData = [
         {
             "date_missing": "10/30/2009",
@@ -187,11 +187,11 @@ def indexPageView(request):
         "data": lstData
     }
 
-    return render(request, 'trafficking/index.html', context)
+    return render(request, 'trafficking/charts.html', context)
 
 
-def chartPageView(request):
-    return render(request, 'trafficking/charts.html')
+def indexPageView(request):
+    return render(request, 'trafficking/index.html')
 
 
 def aboutPageView(request):
