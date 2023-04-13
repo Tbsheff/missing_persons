@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'missing_persons.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Mydatabase',
+        'NAME': 'missingpeople',
         'USER': 'postgres',
-        'PASSWORD': 'HelloWorld',
-        'HOST': 'missingpeople.c5h8izwewtmj.us-east-2.rds.amazonaws.com',
+        'PASSWORD': 'Hello',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }
