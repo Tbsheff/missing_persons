@@ -1,8 +1,10 @@
 from django.urls import path
-from .views import indexPageView, chartPageView, aboutPageView, CTDCPageView, ToolkitPageView, HumanTraffickingHotlinePageView, UtahReportPageView, StatisticsPageView, UTAPageView, AttorneyGeneralPageView
+from .views import indexPageView, chartPageView, aboutPageView, CTDCPageView, ToolkitPageView, HumanTraffickingHotlinePageView, UtahReportPageView, StatisticsPageView, UTAPageView, AttorneyGeneralPageView, showPersonPageView, displayPersonPageView
 
 urlpatterns = [
-    path("", indexPageView, name="index"),
+
+    path("<int:id>/", displayPersonPageView, name="displayPerson"),
+    path("showPerson/", showPersonPageView, name="showPerson"),
     path("charts/", chartPageView, name="charts"),
     path("about/", aboutPageView, name="about"),
     path("CTDC/", CTDCPageView, name="CTDC"),
@@ -12,4 +14,6 @@ urlpatterns = [
     path("stats/", StatisticsPageView, name="stats"),
     path("uta/", UTAPageView, name="UTA"),
     path("attorney/", AttorneyGeneralPageView, name="attorney"),
+    path("", indexPageView, name="index"),
+
 ]
