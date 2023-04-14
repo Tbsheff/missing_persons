@@ -10879,6 +10879,7 @@ a.text-dark:focus {
 
   thead {
     display: table-header-group;
+    position: sticky;
   }
 
   tr,
@@ -11683,4 +11684,20 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-variant: normal;
     line-height: 1;
     text-rendering: auto;
+}
+
+@media (min-width: 992px){
+  thead {
+    position: sticky;
+    top: 6.15rem;
+    background: white;
+  }
+}
+
+@media (max-width: 991.98px){
+  thead {
+    position: sticky;
+    top: 5.15rem;
+    background: white;
+  }
 }

@@ -21,7 +21,7 @@ def displayPersonPageView(request, id):
     db_person = Missingperson.objects.get(id=id)
 
     context = {
-        "data": db_person
+        "dataDisplay": db_person
     }
 
     return render(request, 'trafficking/displayPerson.html', context)
