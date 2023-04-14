@@ -18,7 +18,7 @@
         </thead>
         {% for oPerson in data %}
         <tr>
-            {% for key, value in oPerson.items%}
+            {% for key, value in oPerson.items %}
             <td>{{value}}</td>
             <td><a href="{% url 'displayPerson' id=oPerson.id %}">Details</a></td>
             {% endfor %}
