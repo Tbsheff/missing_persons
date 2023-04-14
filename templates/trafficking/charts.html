@@ -3,37 +3,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h2>Local Missing Persons</h2>
-
-<tbody>
-    <table class="table table-bordered table-hover table-condensed">
-        <thead>
-            <tr>
-                <th title="Field #1">date_missing</th>
-                <th title="Field #2">last_name</th>
-                <th title="Field #3">first_name</th>
-                <th title="Field #4">age_at_missing</th>
-                <th title="Field #5">city</th>
-                <th title="Field #6">state</th>
-                <th title="Field #7">gender</th>
-                <th title="Field #8">race</th>
-            </tr>
-        </thead>
-
-        {% for oStudent in data %}
-        <tr>
-            {% for key, value in oStudent.items%}
-            <td>{{value}}</td>
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
-</tbody>
-
-
 <div class="flex-container"></div>
-<div
-    class="block block-ve-chart-embed block-block-content block-block-content00a50780-1034-404d-a8ae-c8458c1f2b0e block-ve_chart-">
+<div class="block block-ve-chart-embed block-block-content block-block-content00a50780-1034-404d-a8ae-c8458c1f2b0e block-ve_chart-">
     <h2 class="pane-title">Age of Victims</h2>
 
 
@@ -62,8 +33,7 @@
             <div class="chart-container">
                 <div class="recline-graph recline-nvd3 row">
                     <div class="col-md-12 nvd3chart_5432443199194095 recline-nvd3" style="display: block;">
-                        <div id="nvd3chart_5432443199194095" class="recline-nvd3"><svg version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" style="height:375px;width: 100%;" class="nvd3-svg">
+                        <div id="nvd3chart_5432443199194095" class="recline-nvd3"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height:375px;width: 100%;" class="nvd3-svg">
                                 <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
                                     <g transform="translate(30,30)">
                                         <defs>
@@ -75,63 +45,34 @@
                                         <g class="nv-x nv-axis nvd3-svg" transform="translate(0,252)">
                                             <g class="nvd3 nv-wrap nv-axis">
                                                 <g>
-                                                    <g class="tick zero" transform="translate(34.510990142822266,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">0-8 years</text>
+                                                    <g class="tick zero" transform="translate(34.510990142822266,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">0-8 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(97.25823974609375,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">9--17 years</text>
+                                                    <g class="tick zero" transform="translate(97.25823974609375,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">9--17 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(160.0054931640625,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">18--20 years</text>
+                                                    <g class="tick zero" transform="translate(160.0054931640625,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">18--20 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(222.75274658203125,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">21--23 years</text>
+                                                    <g class="tick zero" transform="translate(222.75274658203125,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">21--23 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(285.5,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">24--26 years</text>
+                                                    <g class="tick zero" transform="translate(285.5,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">24--26 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(348.24725341796875,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">27--29 years</text>
+                                                    <g class="tick zero" transform="translate(348.24725341796875,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">27--29 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(410.9945068359375,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">30--38 years</text>
+                                                    <g class="tick zero" transform="translate(410.9945068359375,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">30--38 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(473.74176025390625,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">39--47 years</text>
+                                                    <g class="tick zero" transform="translate(473.74176025390625,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">39--47 years</text>
                                                     </g>
-                                                    <g class="tick zero" transform="translate(536.489013671875,0)"
-                                                        style="opacity: 1;">
-                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3"
-                                                            transform="rotate(-45 0,9.75)" style="text-anchor: end;"
-                                                            x="0">48+ years</text>
+                                                    <g class="tick zero" transform="translate(536.489013671875,0)" style="opacity: 1;">
+                                                        <line y2="-252" x2="0"></line><text dy=".71em" y="3" transform="rotate(-45 0,9.75)" style="text-anchor: end;" x="0">48+ years</text>
                                                     </g>
-                                                    <path class="domain" d="M0,0V0H571V0"></path><text
-                                                        class="nv-axislabel" text-anchor="middle" y="77.6357951107156"
-                                                        x="285.5"></text>
+                                                    <path class="domain" d="M0,0V0H571V0"></path><text class="nv-axislabel" text-anchor="middle" y="77.6357951107156" x="285.5"></text>
                                                 </g>
                                             </g>
                                         </g>
@@ -141,139 +82,84 @@
                                             </g>
                                             <g class="nvd3 nv-wrap nv-axis">
                                                 <g>
-                                                    <g class="tick zero" transform="translate(0,252)"
-                                                        style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                            style="text-anchor: end;" y="0">0%</text>
+                                                    <g class="tick zero" transform="translate(0,252)" style="opacity: 1;">
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="0" style="text-anchor: end;" y="0">0%</text>
                                                     </g>
                                                     <g class="tick" transform="translate(0,228)" style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">2%</text>
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">2%</text>
                                                     </g>
-                                                    <g class="tick" transform="translate(0,204.00000000000003)"
-                                                        style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">4%</text>
+                                                    <g class="tick" transform="translate(0,204.00000000000003)" style="opacity: 1;">
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">4%</text>
                                                     </g>
-                                                    <g class="tick" transform="translate(0,179.99999999999997)"
-                                                        style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">6%</text>
+                                                    <g class="tick" transform="translate(0,179.99999999999997)" style="opacity: 1;">
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">6%</text>
                                                     </g>
                                                     <g class="tick" transform="translate(0,156)" style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">8%</text>
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">8%</text>
                                                     </g>
                                                     <g class="tick" transform="translate(0,132)" style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">10%</text>
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">10%</text>
                                                     </g>
-                                                    <g class="tick" transform="translate(0,108.00000000000001)"
-                                                        style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">12%</text>
+                                                    <g class="tick" transform="translate(0,108.00000000000001)" style="opacity: 1;">
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">12%</text>
                                                     </g>
                                                     <g class="tick" transform="translate(0,84)" style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">14%</text>
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">14%</text>
                                                     </g>
-                                                    <g class="tick" transform="translate(0,59.99999999999999)"
-                                                        style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">16%</text>
+                                                    <g class="tick" transform="translate(0,59.99999999999999)" style="opacity: 1;">
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">16%</text>
                                                     </g>
                                                     <g class="tick" transform="translate(0,36)" style="opacity: 1;">
-                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                            style="text-anchor: end;" y="0">18%</text>
+                                                        <line x2="571" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">18%</text>
                                                     </g>
-                                                    <path class="domain" d="M0,12H0V252H0"></path><text
-                                                        class="nv-axislabel" transform="rotate(-90)" y="-50" x="-126"
+                                                    <path class="domain" d="M0,12H0V252H0"></path><text class="nv-axislabel" transform="rotate(-90)" y="-50" x="-126"
                                                         style="text-anchor: middle;"></text>
                                                 </g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                    transform="translate(0,252)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">0%</text></g>
-                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                    transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
-                                                        text-anchor="end" style="opacity: 1;">20%</text></g>
+                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y" transform="translate(0,252)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                        style="opacity: 1;">0%</text></g>
+                                                <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y" transform="translate(0,12)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                        style="opacity: 1;">20%</text></g>
                                             </g>
                                         </g>
                                         <g class="nv-barsWrap nvd3-svg">
                                             <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
                                                 <g>
                                                     <g class="nv-groups">
-                                                        <g class="nv-group nv-series-0"
-                                                            style="stroke-opacity: 1; fill-opacity: 0.75;">
-                                                            <g transform="translate(9.09835147857666,204)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(92, 184, 178); stroke: rgb(92, 184, 178);">
-                                                                <rect height="47.99999999999997"
-                                                                    width="50.82527472527473" class="discreteBar">
-                                                                </rect><text text-anchor="middle" y="-4"
-                                                                    x="25.412637362637366">4.00</text>
+                                                        <g class="nv-group nv-series-0" style="stroke-opacity: 1; fill-opacity: 0.75;">
+                                                            <g transform="translate(9.09835147857666,204)" class="nv-bar positive" style="fill: rgb(92, 184, 178); stroke: rgb(92, 184, 178);">
+                                                                <rect height="47.99999999999997" width="50.82527472527473" class="discreteBar">
+                                                                </rect><text text-anchor="middle" y="-4" x="25.412637362637366">4.00</text>
                                                             </g>
-                                                            <g transform="translate(71.8456039428711,24)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                                <rect height="228" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(71.8456039428711,24)" class="nv-bar positive" style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                                <rect height="228" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">19.00</text>
                                                             </g>
-                                                            <g transform="translate(134.5928497314453,108)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(174, 220, 217); stroke: rgb(174, 220, 217);">
-                                                                <rect height="144" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(134.5928497314453,108)" class="nv-bar positive" style="fill: rgb(174, 220, 217); stroke: rgb(174, 220, 217);">
+                                                                <rect height="144" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">12.00</text>
                                                             </g>
-                                                            <g transform="translate(197.34010314941406,108)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                                <rect height="144" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(197.34010314941406,108)" class="nv-bar positive" style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                                <rect height="144" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">12.00</text>
                                                             </g>
-                                                            <g transform="translate(260.0873718261719,120)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(231, 244, 243); stroke: rgb(231, 244, 243);">
-                                                                <rect height="132" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(260.0873718261719,120)" class="nv-bar positive" style="fill: rgb(231, 244, 243); stroke: rgb(231, 244, 243);">
+                                                                <rect height="132" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">11.00</text>
                                                             </g>
-                                                            <g transform="translate(322.8346252441406,144)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                                <rect height="107.99999999999997"
-                                                                    width="50.82527472527473" class="discreteBar">
-                                                                </rect><text text-anchor="middle" y="-4"
-                                                                    x="25.412637362637366">9.00</text>
+                                                            <g transform="translate(322.8346252441406,144)" class="nv-bar positive" style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                                <rect height="107.99999999999997" width="50.82527472527473" class="discreteBar">
+                                                                </rect><text text-anchor="middle" y="-4" x="25.412637362637366">9.00</text>
                                                             </g>
-                                                            <g transform="translate(385.5818786621094,36)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 179, 143); stroke: rgb(255, 179, 143);">
-                                                                <rect height="216" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(385.5818786621094,36)" class="nv-bar positive" style="fill: rgb(255, 179, 143); stroke: rgb(255, 179, 143);">
+                                                                <rect height="216" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">18.00</text>
                                                             </g>
-                                                            <g transform="translate(448.3291320800781,156)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                                <rect height="96" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(448.3291320800781,156)" class="nv-bar positive" style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                                <rect height="96" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">8.00</text>
                                                             </g>
-                                                            <g transform="translate(511.0763854980469,192)"
-                                                                class="nv-bar positive"
-                                                                style="fill: rgb(255, 103, 31); stroke: rgb(255, 103, 31);">
-                                                                <rect height="60" width="50.82527472527473"
-                                                                    class="discreteBar"></rect><text
-                                                                    text-anchor="middle" y="-4"
+                                                            <g transform="translate(511.0763854980469,192)" class="nv-bar positive" style="fill: rgb(255, 103, 31); stroke: rgb(255, 103, 31);">
+                                                                <rect height="60" width="50.82527472527473" class="discreteBar"></rect><text text-anchor="middle" y="-4"
                                                                     x="25.412637362637366">5.00</text>
                                                             </g>
                                                         </g>
@@ -285,10 +171,8 @@
                                             <g class="nvd3 nv-legend" transform="translate(0,5)">
                                                 <g transform="translate(497.640625,5)">
                                                     <g class="nv-series" transform="translate(0,5)">
-                                                        <circle class="nv-legend-symbol" r="5"
-                                                            style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
-                                                        </circle><text text-anchor="start" class="nv-legend-text"
-                                                            dy=".32em" dx="8" fill="#000">Percent</text>
+                                                        <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
+                                                        </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Percent</text>
                                                     </g>
                                                 </g>
                                             </g>
@@ -308,8 +192,7 @@
     percent of victims is found in the 0-8 year old age group.
 
 </p>
-<div
-    class="block block-ve-chart-embed block-block-content block-block-contente98c41c4-f020-4d7d-a273-ab3a8fe15a59 block-ve_chart-">
+<div class="block block-ve-chart-embed block-block-content block-block-contente98c41c4-f020-4d7d-a273-ab3a8fe15a59 block-ve_chart-">
     <h2 class="pane-title">CHILDREN'S AGE AT ENTRY INTO TRAFFICKING</h2>
 
 
@@ -320,8 +203,7 @@
         <div class="chart-container">
             <div class="recline-graph recline-nvd3 row">
                 <div class="col-md-12 nvd3chart_9743809867325716 recline-nvd3" style="display: block;">
-                    <div id="nvd3chart_9743809867325716" class="recline-nvd3"><svg version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                    <div id="nvd3chart_9743809867325716" class="recline-nvd3"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
                             <g class="nvd3 nv-wrap nv-discreteBarWithAxes">
                                 <g transform="translate(60,30)">
                                     <defs>
@@ -333,33 +215,19 @@
                                     <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
                                         <g class="nvd3 nv-wrap nv-axis">
                                             <g>
-                                                <g class="tick zero" transform="translate(80.89024353027344,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                        transform="translate(0,5)" style="text-anchor: middle;"
-                                                        x="0">0-8 years</text>
+                                                <g class="tick zero" transform="translate(80.89024353027344,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3" transform="translate(0,5)" style="text-anchor: middle;" x="0">0-8 years</text>
                                                 </g>
-                                                <g class="tick zero" transform="translate(227.96340942382812,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                        transform="translate(0,17)" style="text-anchor: middle;"
-                                                        x="0">9-11 years</text>
+                                                <g class="tick zero" transform="translate(227.96340942382812,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3" transform="translate(0,17)" style="text-anchor: middle;" x="0">9-11 years</text>
                                                 </g>
-                                                <g class="tick zero" transform="translate(375.0365905761719,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                        transform="translate(0,5)" style="text-anchor: middle;"
-                                                        x="0">12-14 years</text>
+                                                <g class="tick zero" transform="translate(375.0365905761719,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3" transform="translate(0,5)" style="text-anchor: middle;" x="0">12-14 years</text>
                                                 </g>
-                                                <g class="tick zero" transform="translate(522.1097412109375,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3"
-                                                        transform="translate(0,17)" style="text-anchor: middle;"
-                                                        x="0">15-17 years</text>
+                                                <g class="tick zero" transform="translate(522.1097412109375,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0"></line><text dy=".71em" y="3" transform="translate(0,17)" style="text-anchor: middle;" x="0">15-17 years</text>
                                                 </g>
-                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel"
-                                                    text-anchor="middle" y="36" x="301.5"
-                                                    transform="translate(0,17)"></text>
+                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel" text-anchor="middle" y="36" x="301.5" transform="translate(0,17)"></text>
                                             </g>
                                         </g>
                                     </g>
@@ -370,91 +238,67 @@
                                         <g class="nvd3 nv-wrap nv-axis">
                                             <g>
                                                 <g class="tick zero" transform="translate(0,400)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                        style="text-anchor: end;" y="0">0</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0" style="text-anchor: end;" y="0">0</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,361.2)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">5</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">5</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,322.4)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">10</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">10</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,283.6)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">15</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">15</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,244.8)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">20</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">20</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,206)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">25</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">25</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,167.2)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">30</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">30</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,128.4)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">35</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">35</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,89.6)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">40</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">40</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,50.8)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">45</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">45</text>
                                                 </g>
-                                                <path class="domain" d="M0,12H0V400H0"></path><text class="nv-axislabel"
-                                                    transform="rotate(-90)" y="-50" x="-200"
-                                                    style="text-anchor: middle;"></text>
+                                                <path class="domain" d="M0,12H0V400H0"></path><text class="nv-axislabel" transform="rotate(-90)" y="-50" x="-200" style="text-anchor: middle;"></text>
                                             </g>
-                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
-                                                    text-anchor="end" style="opacity: 1;">0</text></g>
-                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                transform="translate(0,12)"><text dy=".32em" y="0" x="-3"
-                                                    text-anchor="end" style="opacity: 1;">50</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y" transform="translate(0,400)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                    style="opacity: 1;">0</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y" transform="translate(0,12)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                    style="opacity: 1;">50</text></g>
                                         </g>
                                     </g>
                                     <g class="nv-barsWrap nvd3-svg">
                                         <g class="nvd3 nv-wrap nv-discretebar" transform="translate(0,0)">
                                             <g>
                                                 <g class="nv-groups">
-                                                    <g class="nv-group nv-series-0"
-                                                        style="stroke-opacity: 1; fill-opacity: 0.75;">
-                                                        <g transform="translate(21.32560920715332,198.24000549316406)"
-                                                            class="nv-bar positive"
+                                                    <g class="nv-group nv-series-0" style="stroke-opacity: 1; fill-opacity: 0.75;">
+                                                        <g transform="translate(21.32560920715332,198.24000549316406)" class="nv-bar positive"
                                                             style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                            <rect height="201.76" width="119.12926829268294"
-                                                                class="discreteBar"></rect><text text-anchor="middle"
-                                                                y="-4" x="59.56463414634147">26.00</text>
+                                                            <rect height="201.76" width="119.12926829268294" class="discreteBar"></rect><text text-anchor="middle" y="-4"
+                                                                x="59.56463414634147">26.00</text>
                                                         </g>
-                                                        <g transform="translate(168.39877319335938,260.32000732421875)"
-                                                            class="nv-bar positive"
+                                                        <g transform="translate(168.39877319335938,260.32000732421875)" class="nv-bar positive"
                                                             style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                            <rect height="139.68" width="119.12926829268294"
-                                                                class="discreteBar"></rect><text text-anchor="middle"
-                                                                y="-4" x="59.56463414634147">18.00</text>
+                                                            <rect height="139.68" width="119.12926829268294" class="discreteBar"></rect><text text-anchor="middle" y="-4"
+                                                                x="59.56463414634147">18.00</text>
                                                         </g>
-                                                        <g transform="translate(315.4719543457031,221.52000427246094)"
-                                                            class="nv-bar positive"
+                                                        <g transform="translate(315.4719543457031,221.52000427246094)" class="nv-bar positive"
                                                             style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                            <rect height="178.48" width="119.12926829268294"
-                                                                class="discreteBar"></rect><text text-anchor="middle"
-                                                                y="-4" x="59.56463414634147">23.00</text>
+                                                            <rect height="178.48" width="119.12926829268294" class="discreteBar"></rect><text text-anchor="middle" y="-4"
+                                                                x="59.56463414634147">23.00</text>
                                                         </g>
-                                                        <g transform="translate(462.5451354980469,143.9199981689453)"
-                                                            class="nv-bar positive"
+                                                        <g transform="translate(462.5451354980469,143.9199981689453)" class="nv-bar positive"
                                                             style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                            <rect height="256.08000000000004" width="119.12926829268294"
-                                                                class="discreteBar">
-                                                            </rect><text text-anchor="middle" y="-4"
-                                                                x="59.56463414634147">33.00</text>
+                                                            <rect height="256.08000000000004" width="119.12926829268294" class="discreteBar">
+                                                            </rect><text text-anchor="middle" y="-4" x="59.56463414634147">33.00</text>
                                                         </g>
                                                     </g>
                                                 </g>
@@ -465,10 +309,8 @@
                                         <g class="nvd3 nv-legend" transform="translate(0,5)">
                                             <g transform="translate(529.6428565979004,5)">
                                                 <g class="nv-series" transform="translate(0,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Percent</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Percent</text>
                                                 </g>
                                             </g>
                                         </g>
@@ -485,8 +327,7 @@
 <p class="charts-page">
     A third of all identified children enter into the trafficking process while they are aged 15 to 17.
 </p>>
-<div
-    class="block block-ve-chart-embed block-block-content block-block-content519b038b-83df-4a16-b838-eb4a8e6cc5b5 block-ve_chart-">
+<div class="block block-ve-chart-embed block-block-content block-block-content519b038b-83df-4a16-b838-eb4a8e6cc5b5 block-ve_chart-">
     <h2 class="pane-title">AGE OF IDENTIFIED GIRLS AND BOYS</h2>
 
 
@@ -511,27 +352,21 @@
         <div class="chart-container">
             <div class="recline-graph recline-nvd3 row">
                 <div class="col-md-12 nvd3chart_9415088824200918 recline-nvd3" style="display: block;">
-                    <div id="nvd3chart_9415088824200918" class="recline-nvd3"><svg version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                    <div id="nvd3chart_9415088824200918" class="recline-nvd3"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
                             <g class="nvd3 nv-wrap nv-multiBarWithLegend" transform="translate(60,30)">
                                 <g>
                                     <g class="nv-x nv-axis nvd3-svg" transform="translate(0,400)">
                                         <g class="nvd3 nv-wrap nv-axis">
                                             <g>
-                                                <g class="tick zero" transform="translate(157.92857360839844,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em"
-                                                        y="7" transform="translate(0,0)"
-                                                        style="text-anchor: middle; opacity: 1;" x="0">Girls</text>
+                                                <g class="tick zero" transform="translate(157.92857360839844,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em" y="7" transform="translate(0,0)" style="text-anchor: middle; opacity: 1;"
+                                                        x="0">Girls</text>
                                                 </g>
-                                                <g class="tick zero" transform="translate(445.0714416503906,0)"
-                                                    style="opacity: 1;">
-                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em"
-                                                        y="7" transform="translate(0,0)"
-                                                        style="text-anchor: middle; opacity: 1;" x="0">Boys</text>
+                                                <g class="tick zero" transform="translate(445.0714416503906,0)" style="opacity: 1;">
+                                                    <line y2="-400" x2="0" style="opacity: 1;"></line><text dy=".71em" y="7" transform="translate(0,0)" style="text-anchor: middle; opacity: 1;"
+                                                        x="0">Boys</text>
                                                 </g>
-                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel"
-                                                    text-anchor="middle" y="36" x="301.5" style="opacity: 1;"></text>
+                                                <path class="domain" d="M0,0V0H603V0"></path><text class="nv-axislabel" text-anchor="middle" y="36" x="301.5" style="opacity: 1;"></text>
                                             </g>
                                         </g>
                                     </g>
@@ -539,55 +374,41 @@
                                         <g class="nvd3 nv-wrap nv-axis">
                                             <g>
                                                 <g class="tick zero" transform="translate(0,400)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0"
-                                                        style="text-anchor: end;" y="0">0</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="0" style="text-anchor: end;" y="0">0</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,360)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">10</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">10</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,320)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">20</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">20</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,280)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">30</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">30</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,240)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">40</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">40</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,200)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">50</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">50</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,160)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">60</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">60</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,120)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">70</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">70</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,80)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">80</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">80</text>
                                                 </g>
                                                 <g class="tick" transform="translate(0,40)" style="opacity: 1;">
-                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1"
-                                                        style="text-anchor: end;" y="0">90</text>
+                                                    <line x2="603" y2="0"></line><text dy=".32em" x="-3" opacity="1" style="text-anchor: end;" y="0">90</text>
                                                 </g>
-                                                <path class="domain" d="M0,0H0V400H0"></path><text class="nv-axislabel"
-                                                    transform="rotate(-90)" y="-50" x="-200"
-                                                    style="text-anchor: middle;"></text>
+                                                <path class="domain" d="M0,0H0V400H0"></path><text class="nv-axislabel" transform="rotate(-90)" y="-50" x="-200" style="text-anchor: middle;"></text>
                                             </g>
-                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y"
-                                                transform="translate(0,400)"><text dy=".32em" y="0" x="-3"
-                                                    text-anchor="end" style="opacity: 1;">0</text></g>
-                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y"
-                                                transform="translate(0,0)"><text dy=".32em" y="0" x="-3"
-                                                    text-anchor="end" style="opacity: 1;">100</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMin-y" transform="translate(0,400)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                    style="opacity: 1;">0</text></g>
+                                            <g class="nv-axisMaxMin nv-axisMaxMin-y nv-axisMax-y" transform="translate(0,0)"><text dy=".32em" y="0" x="-3" text-anchor="end"
+                                                    style="opacity: 1;">100</text></g>
                                         </g>
                                     </g>
                                     <g class="nv-barsWrap nvd3-svg">
@@ -599,55 +420,35 @@
                                             </defs>
                                             <g clip-path="url(#nv-edge-clip-9839)">
                                                 <g class="nv-groups">
-                                                    <g class="nv-group nv-series-0"
-                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
-                                                        <rect class="nv-bar positive" x="0" y="332" height="68"
-                                                            width="258.4285714285714"
-                                                            transform="translate(28.71428571428571,0)"
+                                                    <g class="nv-group nv-series-0" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
+                                                        <rect class="nv-bar positive" x="0" y="332" height="68" width="258.4285714285714" transform="translate(28.71428571428571,0)"
                                                             style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
                                                         </rect>
-                                                        <rect class="nv-bar positive" x="0" y="300" height="100"
-                                                            width="258.4285714285714"
-                                                            transform="translate(315.85714285714283,0)"
+                                                        <rect class="nv-bar positive" x="0" y="300" height="100" width="258.4285714285714" transform="translate(315.85714285714283,0)"
                                                             style="fill: rgb(133, 202, 197); stroke: rgb(133, 202, 197);">
                                                         </rect>
                                                     </g>
-                                                    <g class="nv-group nv-series-1"
-                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
-                                                        <rect class="nv-bar positive" x="0" y="292" height="40"
-                                                            width="258.4285714285714"
-                                                            transform="translate(28.71428571428571,0)"
+                                                    <g class="nv-group nv-series-1" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                        <rect class="nv-bar positive" x="0" y="292" height="40" width="258.4285714285714" transform="translate(28.71428571428571,0)"
                                                             style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
                                                         </rect>
-                                                        <rect class="nv-bar positive" x="0" y="236.00000000000003"
-                                                            height="63.99999999999997" width="258.4285714285714"
-                                                            transform="translate(315.85714285714283,0)"
-                                                            style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
+                                                        <rect class="nv-bar positive" x="0" y="236.00000000000003" height="63.99999999999997" width="258.4285714285714"
+                                                            transform="translate(315.85714285714283,0)" style="fill: rgb(206, 234, 232); stroke: rgb(206, 234, 232);">
                                                         </rect>
                                                     </g>
-                                                    <g class="nv-group nv-series-2"
-                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
-                                                        <rect class="nv-bar positive" x="0" y="208" height="84"
-                                                            width="258.4285714285714"
-                                                            transform="translate(28.71428571428571,0)"
+                                                    <g class="nv-group nv-series-2" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
+                                                        <rect class="nv-bar positive" x="0" y="208" height="84" width="258.4285714285714" transform="translate(28.71428571428571,0)"
                                                             style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
                                                         </rect>
-                                                        <rect class="nv-bar positive" x="0" y="156"
-                                                            height="80.00000000000003" width="258.4285714285714"
-                                                            transform="translate(315.85714285714283,0)"
+                                                        <rect class="nv-bar positive" x="0" y="156" height="80.00000000000003" width="258.4285714285714" transform="translate(315.85714285714283,0)"
                                                             style="fill: rgb(255, 209, 188); stroke: rgb(255, 209, 188);">
                                                         </rect>
                                                     </g>
-                                                    <g class="nv-group nv-series-3"
-                                                        style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
-                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036"
-                                                            height="204" width="258.4285714285714"
-                                                            transform="translate(28.71428571428571,0)"
+                                                    <g class="nv-group nv-series-3" style="stroke-opacity: 1; fill-opacity: 0.75; fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
+                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036" height="204" width="258.4285714285714" transform="translate(28.71428571428571,0)"
                                                             style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
                                                         </rect>
-                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036"
-                                                            height="152" width="258.4285714285714"
-                                                            transform="translate(315.85714285714283,0)"
+                                                        <rect class="nv-bar positive" x="0" y="4.0000000000000036" height="152" width="258.4285714285714" transform="translate(315.85714285714283,0)"
                                                             style="fill: rgb(255, 141, 87); stroke: rgb(255, 141, 87);">
                                                         </rect>
                                                     </g>
@@ -659,28 +460,20 @@
                                         <g class="nvd3 nv-legend" transform="translate(0,5)">
                                             <g transform="translate(0,5)">
                                                 <g class="nv-series" transform="translate(0,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">0-8 years</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">0-8 years</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(95,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">9-11 years</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">9-11 years</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(190,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">12-14 years</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">12-14 years</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(300,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">15-17 years</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">15-17 years</text>
                                                 </g>
                                             </g>
                                         </g>
@@ -715,8 +508,7 @@
 <p class="charts-page">As displayed in the chart, the majority of both female and male victims are between the ages of
     15-17.
     Nearly 70% of female victims are in their teenage years, compared to 60% of male victims. </p>
-<div
-    class="block block-ve-chart-embed block-block-content block-block-content50bced35-9506-49b6-a128-27f2273fe380 block-ve_chart-">
+<div class="block block-ve-chart-embed block-block-content block-block-content50bced35-9506-49b6-a128-27f2273fe380 block-ve_chart-">
     <h2 class="pane-title">EDUCATION LEVEL OF CHILDREN</h2>
 
 
@@ -734,8 +526,7 @@
         <div class="chart-container">
             <div class="recline-graph recline-nvd3 row">
                 <div class="col-md-12 nvd3chart_5106621430931986 recline-nvd3" style="display: block;">
-                    <div id="nvd3chart_5106621430931986" class="recline-nvd3"><svg version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
+                    <div id="nvd3chart_5106621430931986" class="recline-nvd3"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height:480px;width: 100%;" class="nvd3-svg">
                             <g class="nvd3 nv-wrap nv-pieChart" transform="translate(60,70)">
                                 <g>
                                     <g class="nv-pieWrap nvd3-svg">
@@ -789,68 +580,41 @@
                                                     </g>
                                                 </g>
                                                 <g class="nv-pieLabels" transform="translate(301.5,180)">
-                                                    <g class="nv-label"
-                                                        transform="translate(7.164183775012016e-15,-117)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    <g class="nv-label" transform="translate(7.164183775012016e-15,-117)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(79.00175416718878,-86.3001902576528)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">24%</text>
+                                                    <g class="nv-label" transform="translate(79.00175416718878,-86.3001902576528)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);">24%</text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(116.83603292420807,-6.192044132059098)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    <g class="nv-label" transform="translate(116.83603292420807,-6.192044132059098)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(110.48297755359802,38.503398173293164)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">11%</text>
+                                                    <g class="nv-label" transform="translate(110.48297755359802,38.503398173293164)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);">11%</text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(72.71743719858455,91.65792015570675)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">7%</text>
+                                                    <g class="nv-label" transform="translate(72.71743719858455,91.65792015570675)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);">7%</text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(-107.49177760850753,46.200841405359256)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">52%</text>
+                                                    <g class="nv-label" transform="translate(-107.49177760850753,46.200841405359256)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);">52%</text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(-36.54754471061403,-111.1452966869299)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    <g class="nv-label" transform="translate(-36.54754471061403,-111.1452966869299)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(-32.60229763944968,-112.36587644222215)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
+                                                    <g class="nv-label" transform="translate(-32.60229763944968,-112.36587644222215)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);"></text>
                                                     </g>
-                                                    <g class="nv-label"
-                                                        transform="translate(-16.465000095050257,-115.83567573019116)">
-                                                        <rect rx="3" ry="3"
-                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                        </rect><text
-                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">4%</text>
+                                                    <g class="nv-label" transform="translate(-16.465000095050257,-115.83567573019116)">
+                                                        <rect rx="3" ry="3" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
+                                                        </rect><text style="text-anchor: middle; fill: rgb(0, 0, 0);">4%</text>
                                                     </g>
                                                 </g>
                                             </g>
@@ -860,40 +624,28 @@
                                         <g class="nvd3 nv-legend" transform="translate(0,5)">
                                             <g transform="translate(59.43749237060547,5)">
                                                 <g class="nv-series" transform="translate(0,5)">
-                                                    =<circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">High school</text>
+                                                    =<circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(92, 184, 178); fill-opacity: 1; stroke: rgb(92, 184, 178);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">High school</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(124.72321319580078,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Middle school</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(133, 202, 197); fill-opacity: 1; stroke: rgb(133, 202, 197);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Middle school</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(279.42857360839844,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(174, 220, 217); fill-opacity: 1; stroke: rgb(174, 220, 217);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">N/K</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(174, 220, 217); fill-opacity: 1; stroke: rgb(174, 220, 217);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">N/K</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(416.1696472167969,5)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">None</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(206, 234, 232); fill-opacity: 1; stroke: rgb(206, 234, 232);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">None</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(0,25)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(231, 244, 243); fill-opacity: 1; stroke: rgb(231, 244, 243);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Other</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(231, 244, 243); fill-opacity: 1; stroke: rgb(231, 244, 243);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Other</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(70,25)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 232, 221); fill-opacity: 1; stroke: rgb(255, 232, 221);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Primary or Elementar...</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 232, 221); fill-opacity: 1; stroke: rgb(255, 232, 221);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Primary or Elementar...</text>
                                                     <title>Primary or Elementary school</title>
                                                     <title>Primary or Elementary school</title>
                                                     <title>Primary or Elementary school</title>
@@ -901,22 +653,16 @@
                                                     <title>Primary or Elementary school</title>
                                                 </g>
                                                 <g class="nv-series" transform="translate(279.42857360839844,25)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Religious education</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 209, 188); fill-opacity: 1; stroke: rgb(255, 209, 188);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Religious education</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(175.1696472167969,45)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 179, 143); fill-opacity: 1; stroke: rgb(255, 179, 143);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Secondary school</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 179, 143); fill-opacity: 1; stroke: rgb(255, 179, 143);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Secondary school</text>
                                                 </g>
                                                 <g class="nv-series" transform="translate(0,45)">
-                                                    <circle class="nv-legend-symbol" r="5"
-                                                        style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
-                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em"
-                                                        dx="8" fill="#000">Technical training</text>
+                                                    <circle class="nv-legend-symbol" r="5" style="stroke-width: 2; fill: rgb(255, 141, 87); fill-opacity: 1; stroke: rgb(255, 141, 87);">
+                                                    </circle><text text-anchor="start" class="nv-legend-text" dy=".32em" dx="8" fill="#000">Technical training</text>
                                                 </g>
                                             </g>
                                         </g>
