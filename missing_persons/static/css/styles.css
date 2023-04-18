@@ -11547,7 +11547,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .nv-series {
