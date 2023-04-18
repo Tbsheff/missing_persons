@@ -5,7 +5,7 @@ original table is clicked  -->
 {% load static %}
 {% block content %}
 <h3>{{dataDisplay.first_name}} {{dataDisplay.last_name}} Information:</h3>
-<table class="table table-bordered table-hover table-condensed">
+<!-- <table class="table table-bordered table-hover table-condensed">
     <tr>
         <th><b>First Name: </b></th>
         <td>{{dataDisplay.first_name}}</td>
@@ -38,5 +38,25 @@ original table is clicked  -->
         <th><b>Race: </b></th>
         <td>{{dataDisplay.race}}</td>
     </tr>
-</table>
+</table> -->
+<form>
+    <label>First Name</label>
+    <input id=first_name name=first_name type="text" value="{{dataDisplay.first_name}}">
+    <br>
+    <label>Last Name</label>
+    <input id=last_name name=last_name type="text" value="{{dataDisplay.last_name}}">
+    <label>Date Missing</label>
+    <input id=date_missing name=date_missing type="text" value="{{dataDisplay.date_missing}}">
+    <label>Age at Missing</label>
+    <input id=age_at_missing name=age_at_missing type="text" value="{{dataDisplay.age_at_missing}}">
+    <label>City</label>
+    <input id=city name=city type="text" value="{{dataDisplay.city}}">
+    <label>State</label>
+    <input id=state name=state type="text" value="{{dataDisplay.state}}">
+    <label>Gender</label>
+    <input id=gender name=gender type="text" value="{{dataDisplay.gender}}">
+    <label>Race</label>
+    <input id=race name=race type="text" value="{{dataDisplay.race}}">
+</form>
+
 {% endblock %}
