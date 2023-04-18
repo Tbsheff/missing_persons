@@ -1,0 +1,39 @@
+<!--Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson-->
+<!-- This html page displays all the missing person data in a table -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>Local Missing Persons</h2>
+<div>
+    <tbody>
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th title="Field #1">Date Missing</th>
+                    <th title="Field #2">Last Name</th>
+                    <th title="Field #3">First Name</th>
+                    <th title="Field #4">Age at Missing</th>
+                    <th title="Field #5">City</th>
+                    <th title="Field #6">State</th>
+                    <th title="Field #7">Gender</th>
+                    <th title="Field #8">Race</th>
+                    <th title="Field #9">Details</th>
+                </tr>
+            </thead>
+            {% for oPerson in data %}
+            <tr>
+                <td>{{oPerson.date_missing}}</td>
+                <td>{{oPerson.last_name}}</td>
+                <td>{{oPerson.first_name}}</td>
+                <td>{{oPerson.age_at_missing}}</td>
+                <td>{{oPerson.city}}</td>
+                <td>{{oPerson.state}}</td>
+                <td>{{oPerson.gender}}</td>
+                <td>{{oPerson.race}}</td>
+                <td><a href="{% url 'displayPerson' id=oPerson.id %}">Details</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </tbody>
+</div>
+{% endblock %}

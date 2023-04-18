@@ -1,0 +1,42 @@
+<!--Savannah Hogan, Camille Cameron, Tyler Sheffield, Martin Villar, Brendan Bundy, Hannah Johnson-->
+<!-- This HTML page displays all the data for a certain missing person when the details button on the
+original table is clicked  -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3>{{dataDisplay.first_name}} {{dataDisplay.last_name}} Information:</h3>
+<table class="table table-bordered table-hover table-condensed">
+    <tr>
+        <th><b>First Name: </b></th>
+        <td>{{dataDisplay.first_name}}</td>
+    </tr>
+    <tr>
+        <th><b>Last Name: </b></th>
+        <td>{{dataDisplay.last_name}}</td>
+    </tr>
+    <tr>
+        <th><b>Date Missing:</b></th>
+        <td>{{dataDisplay.date_missing}}</td>
+    </tr>
+    <tr>
+        <th><b>Age at Missing: </b></th>
+        <td>{{dataDisplay.age_at_missing}}</td>
+    </tr>
+    <tr>
+        <th><b>City: </b></th>
+        <td>{{dataDisplay.city}}</td>
+    </tr>
+    <tr>
+        <th><b>State: </b></th>
+        <td>{{dataDisplay.state}}</td>
+    </tr>
+    <tr>
+        <th><b>Gender: </b></th>
+        <td>{{dataDisplay.gender}}</td>
+    </tr>
+    <tr>
+        <th><b>Race: </b></th>
+        <td>{{dataDisplay.race}}</td>
+    </tr>
+</table>
+{% endblock %}
