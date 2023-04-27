@@ -3,34 +3,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h2>Local Missing Persons</h2>
-
-<tbody>
-    <table class="table table-bordered table-hover table-condensed">
-        <thead>
-            <tr>
-                <th title="Field #1">date_missing</th>
-                <th title="Field #2">last_name</th>
-                <th title="Field #3">first_name</th>
-                <th title="Field #4">age_at_missing</th>
-                <th title="Field #5">city</th>
-                <th title="Field #6">state</th>
-                <th title="Field #7">gender</th>
-                <th title="Field #8">race</th>
-            </tr>
-        </thead>
-
-        {% for oStudent in data %}
-        <tr>
-            {% for key, value in oStudent.items%}
-            <td>{{value}}</td>
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
-</tbody>
-
-
 <div class="flex-container"></div>
 <div class="block block-ve-chart-embed block-block-content block-block-content00a50780-1034-404d-a8ae-c8458c1f2b0e block-ve_chart-">
     <h2 class="pane-title">Age of Victims</h2>
@@ -214,7 +186,8 @@
         </div>
     </div>
 </div>
-<p class="charts-page">The above chart outlines the percent of human trafficking victims in different age ranges. Victims can be any age
+<p class="charts-page">The above chart outlines the percent of human trafficking victims in different age ranges.
+    Victims can be any age
     from 0 to 48+ years. As shown the highest percent of victims are in the 9-17 year old age group while the lowest
     percent of victims is found in the 0-8 year old age group.
 
@@ -532,7 +505,8 @@
         </div>
     </div>
 </div>
-<p class="charts-page">As displayed in the chart, the majority of both female and male victims are between the ages of 15-17.
+<p class="charts-page">As displayed in the chart, the majority of both female and male victims are between the ages of
+    15-17.
     Nearly 70% of female victims are in their teenage years, compared to 60% of male victims. </p>
 <div class="block block-ve-chart-embed block-block-content block-block-content50bced35-9506-49b6-a128-27f2273fe380 block-ve_chart-">
     <h2 class="pane-title">EDUCATION LEVEL OF CHILDREN</h2>

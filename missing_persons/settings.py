@@ -15,6 +15,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
+from getpass import getpass
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ja%)6tl+zd%d^1y765nya8o=wgrz%fua5=9hjt=7(la*tn2k$&'
+SECRET_KEY = '76419fd6885a677f802fd1d2b5acd0188e23e001042b05a8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'missingpeople',
         'USER': 'postgres',
-        'PASSWORD': 'Hello',
+        'PASSWORD': getpass(),
         'HOST': 'localhost',
         'PORT': '5432'
     }
