@@ -11684,9 +11684,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-variant: normal;
     line-height: 1;
     text-rendering: auto;
-<<<<<<< HEAD
-}
-=======
 }
 
 @media (min-width: 992px){
@@ -11704,4 +11701,3 @@ section#contact form#contactForm :-ms-input-placeholder {
     background: white;
   }
 }
->>>>>>> main
