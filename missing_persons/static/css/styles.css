@@ -11701,3 +11701,23 @@ section#contact form#contactForm :-ms-input-placeholder {
     background: white;
   }
 }
+
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+label {
+  grid-column-start: 1;
+}
+
+input {
+  cursor: default;
+}
+
+@media screen and (max-width: 600px) {
+  input {
+    max-width: 75%;
+  }
+}
