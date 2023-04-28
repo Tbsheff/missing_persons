@@ -1,4 +1,2 @@
-web: gunicorn missing_persons>.wsgi
-
 web: python manage.py migrate && gunicorn missing_persons.wsgi
 
