@@ -9,9 +9,9 @@
         <table class="table table-bordered table-hover table-condensed">
             <thead>
                 <tr>
-                    <th title="Field #1">Date Missing</th>
-                    <th title="Field #2">Last Name</th>
-                    <th title="Field #3">First Name</th>
+                    <th title="Field #1">Last Name</th>
+                    <th title="Field #2">First Name</th>
+                    <th title="Field #3">Date Missing</th>
                     <th title="Field #4">Age at Missing</th>
                     <th title="Field #5">City</th>
                     <th title="Field #6">State</th>
@@ -22,18 +22,57 @@
             </thead>
             {% for oPerson in data %}
             <tr>
-                <td>{{oPerson.date_missing}}</td>
-                <td>{{oPerson.last_name}}</td>
-                <td>{{oPerson.first_name}}</td>
-                <td>{{oPerson.age_at_missing}}</td>
-                <td>{{oPerson.city}}</td>
-                <td>{{oPerson.state}}</td>
-                <td>{{oPerson.gender}}</td>
-                <td>{{oPerson.race}}</td>
-                <td><a href="{% url 'displayPerson' id=oPerson.id %}">Details</a></td>
+                <td data-cell="last name">{{oPerson.last_name}}</td>
+                <td data-cell="first name">{{oPerson.first_name}}</td>
+                <td data-cell="date missing">{{oPerson.date_missing}}</td>
+                <td data-cell="age at missing">{{oPerson.age_at_missing}}</td>
+                <td data-cell="city">{{oPerson.city}}</td>
+                <td data-cell="state">{{oPerson.state}}</td>
+                <td data-cell="gender">{{oPerson.gender}}</td>
+                <td data-cell="race">{{oPerson.race}}</td>
+                <td data-cell="analysis"><a href="{% url 'displayPerson' id=oPerson.id %}">Details</a></td>
             </tr>
             {% endfor %}
         </table>
     </tbody>
 </div>
+<script>
+    function AddTableARIA() {
+        try {
+            var allTables = document.querySelectorAll('table');
+            for (var i = 0; i < allTables.length; i++) {
+                allTables[i].setAttribute('role', 'table');
+            }
+            var allCaptions = document.querySelectorAll('caption');
+            for (var i = 0; i < allCaptions.length; i++) {
+                allCaptions[i].setAttribute('role', 'caption');
+            }
+            var allRowGroups = document.querySelectorAll('thead, tbody, tfoot');
+            for (var i = 0; i < allRowGroups.length; i++) {
+                allRowGroups[i].setAttribute('role', 'rowgroup');
+            }
+            var allRows = document.querySelectorAll('tr');
+            for (var i = 0; i < allRows.length; i++) {
+                allRows[i].setAttribute('role', 'row');
+            }
+            var allCells = document.querySelectorAll('td');
+            for (var i = 0; i < allCells.length; i++) {
+                allCells[i].setAttribute('role', 'cell');
+            }
+            var allHeaders = document.querySelectorAll('th');
+            for (var i = 0; i < allHeaders.length; i++) {
+                allHeaders[i].setAttribute('role', 'columnheader');
+            }
+            // this accounts for scoped row headers
+            var allRowHeaders = document.querySelectorAll('th[scope=row]');
+            for (var i = 0; i < allRowHeaders.length; i++) {
+                allRowHeaders[i].setAttribute('role', 'rowheader');
+            }
+        } catch (e) {
+            console.log("AddTableARIA(): " + e);
+        }
+    }
+
+    AddTableARIA();
+</script>
 {% endblock %}
