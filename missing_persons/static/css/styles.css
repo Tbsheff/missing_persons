@@ -11635,20 +11635,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: none;
   z-index: 1;
 }
-
-.btn-floating.btn-lg,
-.btn-group-lg>.btn-floating.btn {
+.btn-floating.btn-lg, .btn-group-lg>.btn-floating.btn {
   width: var(--mdb-btn-width-lg);
   height: var(--mdb-btn-height-lg);
 }
-
-[type=button]:not(:disabled),
-[type=reset]:not(:disabled),
-[type=submit]:not(:disabled),
-button:not(:disabled) {
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
 }
-
 .btn-floating {
   --mdb-btn-width: 2.3125rem;
   --mdb-btn-height: 2.3125rem;
@@ -11665,61 +11658,35 @@ button:not(:disabled) {
   width: var(--mdb-btn-width);
   height: var(--mdb-btn-height);
 }
-
-.btn-floating,
-[class*=btn-outline-].btn-floating {
+.btn-floating, [class*=btn-outline-].btn-floating {
   --mdb-btn-border-radius: 50%;
   border-radius: var(--mdb-btn-border-radius);
   padding: 0;
-  position: relative;
+  position: relative;}
+
+  .btn-floating.btn-lg .fab, .btn-floating.btn-lg .far, .btn-floating.btn-lg .fas, .btn-group-lg>.btn-floating.btn .fab, .btn-group-lg>.btn-floating.btn .far, .btn-group-lg>.btn-floating.btn .fas {
+    width: var(--mdb-btn-icon-width-lg);
+    line-height: var(--mdb-btn-icon-line-height-lg);
+}
+.btn-floating .fab, .btn-floating .far, .btn-floating .fas {
+    width: var(--mdb-btn-icon-width);
+    line-height: var(--mdb-btn-icon-line-height);
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
 }
 
-.btn-floating.btn-lg .fab,
-.btn-floating.btn-lg .far,
-.btn-floating.btn-lg .fas,
-.btn-group-lg>.btn-floating.btn .fab,
-.btn-group-lg>.btn-floating.btn .far,
-.btn-group-lg>.btn-floating.btn .fas {
-  width: var(--mdb-btn-icon-width-lg);
-  line-height: var(--mdb-btn-icon-line-height-lg);
-}
-
-.btn-floating .fab,
-.btn-floating .far,
-.btn-floating .fas {
-  width: var(--mdb-btn-icon-width);
-  line-height: var(--mdb-btn-icon-line-height);
-}
-
-.fa-solid,
-.fas {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-
-.fa,
-.fa-brands,
-.fa-duotone,
-.fa-light,
-.fa-regular,
-.fa-solid,
-.fa-thin,
-.fab,
-.fad,
-.fal,
-.far,
-.fas,
-.fat {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: var(--fa-display, inline-block);
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-}
-
-@media (min-width: 992px) {
+@media (min-width: 992px){
   thead {
     position: sticky;
     top: 6.15rem;
@@ -11727,30 +11694,30 @@ button:not(:disabled) {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px){
   thead {
     position: sticky;
     top: 5.15rem;
     background: white;
   }
 
-  th {
+  th{
     display: none;
 
   }
 
-  td {
-    display: grid;
+  td{
+    display: grid; 
     grid-template-columns: 14ch auto;
     gap: .5rem;
     padding: 0.5rem 1rem;
   }
 
-  td:first-child {
+  td:first-child{
     padding-top: 1rem;
   }
 
-  td:last-child {
+  td:last-child{
     padding-bottom: 1rem;
   }
 
@@ -11761,31 +11728,18 @@ button:not(:disabled) {
   }
 }
 
-th {
-  background: hsl(0 0% 70%)
+th{
+  background:hsl(0 0% 70%)
 }
 
-tr:nth-of-type(2n) {
+tr:nth-of-type(2n){
   background: hsl(0 0% 50% / 0.1);
 }
 
-.chart th {
+.chart th{
   background: none;
 }
 
-.chart th:nth-of-type(2n) {
+.chart th:nth-of-type(2n){
   background: hsl(0 0% 50% / 0.1);
-}
-
-
-.nvd3-svg {
-  max-width: 100%;
-  height: auto;
-}
-
-@media(min-width: 900px) {
-  .nvd3-svg {
-    max-width: 80%;
-    max-height: 30rem;
-  }
 }
