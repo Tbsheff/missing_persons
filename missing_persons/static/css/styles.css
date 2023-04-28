@@ -68,7 +68,7 @@ body {
   background-color: #fff;
   position: relative;
   top: 6.2rem;
-  padding-bottom: 10.7rem;
+  padding-bottom: 10rem;
 }
 
 main {
@@ -10879,6 +10879,7 @@ a.text-dark:focus {
 
   thead {
     display: table-header-group;
+    position: sticky;
   }
 
   tr,
@@ -11547,7 +11548,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .nv-series {
@@ -11731,5 +11732,60 @@ button:not(:disabled) {
     position: sticky;
     top: 5.15rem;
     background: white;
+  }
+
+  th {
+    display: none;
+
+  }
+
+  td {
+    display: grid;
+    grid-template-columns: 14ch auto;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  td:first-child {
+    padding-top: 1rem;
+  }
+
+  td:last-child {
+    padding-bottom: 1rem;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+
+th {
+  background: hsl(0 0% 70%)
+}
+
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 50% / 0.1);
+}
+
+.chart th {
+  background: none;
+}
+
+.chart th:nth-of-type(2n) {
+  background: hsl(0 0% 50% / 0.1);
+}
+
+
+.nvd3-svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media(min-width: 900px) {
+  .nvd3-svg {
+    max-width: 80%;
+    max-height: 30rem;
   }
 }
