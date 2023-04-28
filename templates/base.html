@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <link href="{% static 'css/styles.css' %} ?{% now 'U' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 </head>
 <!--Main header-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <img src="{% static 'images/303logo.png' %}" alt="your image" id="yourImage">
+        <a href="{% url 'index'%}"><img src="{% static 'images/303logo.png' %}" alt="your image" id="yourImage"></a>
         <div class="container conthead">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,6 +30,7 @@
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'charts' %}">Charts</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'showPerson' %}">Missing People</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'showPerson' %}">Missing People</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'about' %}">About</a></li>
                 </ul>
@@ -46,6 +47,14 @@
     </svg>
 </button>
 
+<!-- Back to top button -->
+<button type="button" class="btn btn-warning btn-floating btn-sm" id="btn-back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="-192 -125 768 1024 "><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+    </svg>
+</button>
 
 <body>
     <main>
@@ -87,6 +96,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script>
         //Get the button
         let mybutton = document.getElementById("btn-back-to-top");
